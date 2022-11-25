@@ -73,10 +73,9 @@
 }
 
 .btnHero:hover {
-  color: var(--color-6);
   transition: 0.3s;
   transition: 0.3s;
-  background-color: var(--color-4);
+  background-color: var(--color-1);
 }
 
 .navbar .nav-item .nav-link {
