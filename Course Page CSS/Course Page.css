@@ -1,0 +1,140 @@
+/* HEADER */
+header {
+    border: 0;
+    margin: 0;
+    background: #ffffff;
+    color: #F5751D;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    margin-top: 96px;
+    margin-bottom: 16px;
+}
+
+.crumbBackground {
+    background: none;
+    margin-top:  1em;
+    padding: 0;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+.header h6 {
+    font-size: 1em;
+}
+
+.course-details-top {
+    border-radius: 0.5em;
+    background-color: #FCA26E;
+    color: black;
+    font-weight: 500;
+}
+
+.course-details-side {
+    background-color: #d7e0e1;
+    border-radius: 2em;
+    margin: 0 1.3em;
+    padding: 1.3em 0;
+}
+
+.course-details-side p {
+    font-size: 0.8em;
+}
+
+.aside {
+    max-width: 70%;
+}
+
+.enroll-div {
+    padding-top: 0;
+    padding-bottom: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    float: right;
+    right: 2%;
+    top: 14%;
+    position: sticky;
+    width: 25%;
+}
+
+.enroll-btn {
+    padding: 0.5em 1.7em;
+    border-radius: 0.5em;
+    border: 0;
+    font-size: 1.5em;
+    background: #FF791D;
+    color: white;
+}
+
+
+.enroll-btn:hover {
+    background-color: #0a848b;
+    color: white;
+}
+
+.course-button {
+    padding: 0.5em;
+    background: none;
+}
+
+.course-button:hover {
+    color: rgb(24, 23, 110);
+    text-shadow: 0.3em 0.3em 1em black;
+}
+
+.overview-img {
+    width: 3em;
+    height: 3em;
+}
+
+
+@media all and (max-width: 992px) {
+    .aside {
+        max-width: 95%;
+    }
+
+    .enroll-div {
+        float: none;
+        width: 85%;
+        position: static;
+        margin: auto;
+    }
+}
+
+@media all and (min-width: 576px) and (max-width: 768px) {
+
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .header h6 {
+        font-size: 0.8em;
+    }
+}
+
+@media all and (max-width: 576px) {
+
+    .header h1 {
+        font-size: 1.3em;
+    }
+
+    .header h6 {
+        font-size: 0.8em;
+    }
+
+    .enroll-btn {
+        padding: 0.3em 1.6em;
+        border-radius: 0.5em;
+        font-size: 1.2em;
+        background: #00B2BD;
+        color: white;
+        border: 0;
+    }
+}

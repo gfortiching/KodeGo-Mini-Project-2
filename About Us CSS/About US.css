@@ -1,0 +1,213 @@
+/* HEADER */
+header {
+    border: 0;
+    margin: 0;
+    background: #ffffff;
+    color: #F5751D;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    margin-top: 96px;
+    margin-bottom: 16px;
+}
+
+.bgTeam {
+    background-color: #d2d6de;
+}
+
+/* .bgCSS {
+    background-color: #e5e5f7;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 30px 30px, linear-gradient(#f792454b 2.4000000000000004px, transparent 2.4000000000000004px) 0 -1.2000000000000002px, linear-gradient(90deg, #f792455a 2.4000000000000004px, #e5e5f7 2.4000000000000004px) -1.2000000000000002px 0;
+    background-size: 60px 60px, 60px 60px, 30px 30px, 30px 30px;
+    z-index: 0;
+} */
+
+.col-ceo {
+    max-width: 300px;
+    max-height: 300px;
+    /* width: 25%; */
+    margin: 0 auto;
+}
+
+.col-team {
+    max-width: 300px;
+    max-height: 700px;
+    /* width: 25%; */
+    margin-bottom: 16px;
+    margin-top: 16px;
+    margin: auto;
+}
+
+.card {
+    /* padding-bottom: 20px; */
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* .teamcard {
+    border: 1px solid black;
+} */
+  
+.con-team {
+    height: 200px;
+    padding: 0;
+}
+/*   
+.title-pos {
+    color: grey;
+} */
+
+.soc-med {
+    color: rgb(200, 246, 255);
+    text-shadow: 5px 5px 5px rgb(39, 48, 60);
+    font-size: 1.5em;
+}
+
+.soc-med:hover {
+    color: black;
+}
+
+.card > img {
+    height: 350px;
+}
+
+.career-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.career-link:hover {
+    opacity: 0.8;
+    color: red;
+}
+
+.sec-title {
+    font-family: 'Patrick Hand', cursive;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.partner-icon img {
+    width: 200px;
+    height: 200px;
+    margin-top: 16px;
+    object-fit: cover;
+}
+
+.partner-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.partnerImg {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 32px;
+}
+
+/** <hr> **/
+
+.hrImg {
+    border: 2.5px solid white;
+    background-color: white;
+    opacity: 1;
+    width: 60px;
+    margin: 5px 0;
+}
+
+/** Hover Effect **/
+
+  .card-info  {
+    position: absolute;
+    margin-right: 16px;
+    opacity: 0;
+    color: black;
+    font-weight: 700;
+  }
+
+/** Card Background Color **/
+
+.ourTeamImg {
+    object-fit: cover;
+    height: auto;
+}
+
+.bg-gene {
+    background-color: #45a7c5b8;
+}
+
+.geneTxt {
+    color: rgb(19, 19, 56);
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin-left: 8px;
+}
+
+.bg-dave {
+    background-color: #efb8fd;
+}
+
+.daveTxt {
+    color: rgb(19, 19, 56);
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin-left: 8px;
+}
+    
+
+.bg-edsel {
+    background-color: #eeff70;
+}
+
+.edselTxt {
+    color: rgb(19, 19, 56);
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin-left: 8px;
+}
+
+.bg-gab {
+    background-color: #fdb98b;
+}
+
+.gabTxt {
+    color: rgb(19, 19, 56);
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin-left: 8px;
+}
+
+.bg-kris {
+    background-color: #ffc7d7;
+}
+
+.krisTxt {
+    color: rgb(19, 19, 56);
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin-left: 8px;
+}
+
+@media only screen and (max-width: 720px) {
+    /* .col-ceo {
+        width: 100%;
+        display: block;
+    } */
+    /* .col-team {
+        width: 100%;
+        display: block;
+    } */
+}
+
+@media all and (max-width: 576px) {
+    .partner-icon img {
+        width: 100px;
+        height: 100px;
+    }
+}
