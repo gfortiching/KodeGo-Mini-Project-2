@@ -25,7 +25,7 @@
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">E-LEARN</a>
+      <a class="navbar-brand" href="/Landing Page/home.html">E-LEARN</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,13 +37,11 @@
 
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
           </li> -->
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Courses
             </a>
             <ul class="dropdown-menu">
@@ -57,7 +55,8 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Resources
             </a>
             <ul class="dropdown-menu">
@@ -75,24 +74,74 @@
           </li>
 
         </ul>
+        <!-- Button trigger modal start-->
         <form class="d-block text-center d-lg-flex flex-column flex-lg-row justify-content-center gap-2">
           <!-- <button class="btn btn-1" type="button">Register <i class="fas fa-clipboard"></i></button>
           <button class="btn btn-1 mx-2" type="button">Login <i class="fas fa-sign-in-alt"></i></button> -->
-          <button type="button" class="btn btn-1" data-bs-toggle="modal" data-bs-target="#exampleLogin">
+          <button type="button" class="btn btn-1" data-bs-toggle="modal" data-bs-target="#Register">
             Register <i class="fas fa-clipboard"></i></button>
           <br class="d-flex d-lg-none">
-          <button type="button" class="btn btn-1 mt-3 mb-3 mt-lg-0 mb-lg-0" data-bs-toggle="modal" data-bs-target="#exampleRegister">
+          <button type="button" class="btn btn-1 mx-3 mt-3 mb-3 mt-lg-0 mb-lg-0" data-bs-toggle="modal"
+            data-bs-target="#Login">
             Login <i class="fas fa-sign-in-alt"></i></button>
+          <!-- <button type="button" class="btn btn-1 mx-3 mt-3 mb-3 mt-lg-0 mb-lg-0" data-bs-toggle="modal"
+            data-bs-target="#test">
+            Test <i class="fas fa-sign-in-alt"></i></button> -->
         </form>
+        <!-- Button trigger modal end-->
       </div>
     </div>
   </nav>
 
-  <!-- Button trigger modal -->
+  <!-- Modal Register/Login -->
 
+  <div class="modal fade" id="test" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="row mt-5">
+        <div class="col-lg-4 bg-white m-auto rounded-top wrapper">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-  <!-- Modal Register -->
-  <div class="modal fade" id="exampleLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <form action="#">
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+              <input type="text" class="form-control" placeholder="Firstname">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa fa-lock"></i></span>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa fa-lock"></i></span>
+              <input type="password" class="form-control" placeholder="Confirm Password">
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-success mb-2">Signup Now</button>
+              <p class="text-center text muted">When You Register by Clicking Signup Button, You Agree to our
+                <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+              </p>
+              <p class="text-center">
+                Already Have an Account<a href="#Login">Login Here</a>
+              </p>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Start -->
+  <div class="modal fade" id="Register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -100,18 +149,53 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+
+          <form action="#">
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+              <input type="text" class="form-control" placeholder="Firstname">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa fa-lock"></i></span>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa fa-lock"></i></span>
+              <input type="password" class="form-control" placeholder="Confirm Password">
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-success mb-3">Signup Now</button>
+              <p class="text-center text muted">When You Register by Clicking Signup Button, You Agree to our
+                <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+              </p>
+              <p class="text-center">
+                Already Have an Account? <a href="#Login">Login Here</a>
+              </p>
+            </div>
+          </form>
+
+          <!-- ... -->
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
+
       </div>
     </div>
   </div>
+  <!-- Register End -->
 
-  <!-- Modal Login -->
-  <div class="modal fade" id="exampleRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Login Start -->
+  <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -119,15 +203,46 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+
+          <form action="#">
+
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa fa-lock"></i></span>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-success mb-3 mt-3">Login</button>
+              <p class="text-center">
+                Don't Have an Account? <a href="#Login">Sign up Here</a>
+              </p>
+              <p class="text-center">or</p>
+              <p class="text-center">Log in with</p>
+              <div class="log-icon text-center">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+            </div>
+          </form>
+
+          <!-- ... -->
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Login End-->
+  <!-- Modal Register/Login END-->
 
   <!-- Navbar End -->
 
@@ -138,16 +253,18 @@
       <div class="row">
         <div class="col-12 col-lg-6 d-flex flex-column justify-content-center d-md-block">
           <h1 class="text-center text-md-start">Learn with us!</h1>
-          <p class="mt-4 text-center text-md-start">E-Learn is an award winning online learning platform for kids! Learn online with or without a teacher.</p>
+          <p class="mt-4 text-center text-md-start">E-Learn is an award winning online learning platform for kids!
+            Learn
+            online with or without a teacher.</p>
           <button class="btn btnHero text-white" type="button">Learn For Free <i class="fa-solid fa-book"></i></button>
         </div>
       </div>
     </div>
   </section>
- <img src="/Landing Page/images/cloud.png" class="heroImg">
+  <img src="/Landing Page/images/cloud.png" class="heroImg">
   <!-- Hero Section End -->
 
-<section></section>
+  <section></section>
 
 
   <!-- Footer Section Start -->
@@ -193,7 +310,8 @@
                 <a href=""><img src="/Landing Page/images/logo.png" class="img-fluid"></a>
               </div>
               <div class="footer-text">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, mollitia esse. Officia, dolorem id
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, mollitia esse. Officia, dolorem
+                  id
                   architecto illo at porro excepturi. Veritatis, tenetur! Non at ullam facere similique iusto
                   necessitatibus enim aliquid.</p>
               </div>

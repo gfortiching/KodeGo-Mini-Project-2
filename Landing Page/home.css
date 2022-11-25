@@ -99,6 +99,23 @@
   transform: scale(1);
 }
 
+/* --------------Modal Log/Sign Section------------------ */
+
+.modal-body .log-icon a {
+  color: var(--color-1);
+}
+
+.modal-body .log-icon i {
+  font-size: 30px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+
+.modal-body .log-icon i:hover {
+  color: var(--color-6)
+}
+
 /* --------------Hero Section------------------ */
 
 .heroImg {
