@@ -23,10 +23,13 @@ header h1 {
 
 .header h1 {
     font-size: 2em;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 5px;
 }
 
 .header h6 {
     font-size: 1em;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .course-details-top {
@@ -34,6 +37,7 @@ header h1 {
     background-color: #FCA26E;
     color: black;
     font-weight: 500;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .course-details-side {
@@ -82,6 +86,7 @@ header h1 {
 .course-button {
     padding: 0.5em;
     background: none;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .course-button:hover {
@@ -94,6 +99,17 @@ header h1 {
     height: 3em;
 }
 
+.patrickHand {
+    font-family: 'Patrick Hand', cursive;
+}
+
+.sansSerif {
+    font-family: sans-serif;
+}
+
+.accordion-button {
+    font-size: 0.7em;
+}
 
 @media all and (max-width: 992px) {
     .aside {
