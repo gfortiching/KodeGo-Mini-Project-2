@@ -47,8 +47,8 @@
 }
 
 .btn-1 {
-  background-color: var(--color-5);
-  color: var(--black);
+  background-color: var(--color-6);
+  color: var(--white);
   padding: 8px 30px;
   border-radius: 30px;
   font-size: 14px;
