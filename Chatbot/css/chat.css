@@ -34,21 +34,23 @@
 
 .outer-container {
     height: 390px;
-    bottom: 0%;
     position: relative;
 }
 
+#chatbox {
+    min-height: 305px;
+}
+
 #chat-timestamp {
-    margin-top: 11em;
+    margin-top: 0;
 }
 
 .chat-container {
-    height: 440px;
     width: 100%;
     bottom: 0;
     left: 0;
     scroll-behavior: smooth;
-    /* hyphens: auto; */
+    hyphens: auto;
 }
 
 .chat-container::-webkit-scrollbar {
@@ -173,8 +175,15 @@
 
 .wizard {
     width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
 .quizMaster {
-    margin-top: 1em;
+    position: sticky;
+    background-color: white;
+    padding: 1em 0;
+    top: 0%;
+    z-index: 999;
+    margin: 1em auto 0;
 }

@@ -39,12 +39,11 @@ function firstBotMessage() {
         let firstMessage = "Hello! I am the Wizard Quiz Master. It's nice to meet you, Little Wizard!";
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
-    setTimeout(() => {
-        firstBotMessage();
-        
-        let secondMessage = "We are about to begin our Chapter Quiz. Are you ready? If you're not yet ready, you can say \"<b>Not yet.</b>\"";
-        document.getElementById("botStarterMessage2").innerHTML = '<p class="botText"><span>' + secondMessage + '</span></p>';
-    }, 2000); 
+    // setTimeout(() => {
+    //     firstBotMessage();
+    //     let secondMessage = "Hello! I am the Wizard Quiz Master. It's nice to meet you, Little Wizard!";
+    //     document.getElementById("botStarterMessage2").innerHTML = '<p class="botText"><span>' + secondMessage + '</span></p>';
+    // }, 2000)
 }
 
 firstBotMessage();
