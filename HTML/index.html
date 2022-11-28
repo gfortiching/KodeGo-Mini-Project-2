@@ -22,8 +22,6 @@
 
 <body>
 
-
-  <!-- push dave -->
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
     <div class="container-fluid">
@@ -107,31 +105,31 @@
           <form action="#">
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
-              <input type="text" class="form-control" placeholder="Firstname">
+              <input type="text" class="form-control" placeholder="Firstname" required>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
-              <input type="text" class="form-control" placeholder="Last Name">
+              <input type="text" class="form-control" placeholder="Last Name" required>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-              <input type="email" class="form-control" placeholder="Email">
+              <input type="email" class="form-control" placeholder="Email" required>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa fa-lock"></i></span>
-              <input type="password" class="form-control" placeholder="Password">
+              <input type="password" class="form-control" placeholder="Password" required>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa fa-lock"></i></span>
-              <input type="password" class="form-control" placeholder="Confirm Password">
+              <input type="password" class="form-control" placeholder="Confirm Password" required>
             </div>
             <div class="d-grid">
-              <button type="button" class="btn btn-success mb-3">Signup Now</button>
+              <button type="button" class="btn btn-success mb-3">Sign Up Now</button>
               <p class="text-center text muted">When You Register by Clicking Signup Button, You Agree to our
                 <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
               </p>
               <p class="text-center">
-                Already Have an Account? <button data-bs-toggle="modal" data-bs-target="#Login"
+                Already Have an Account? <button type="button" data-bs-toggle="modal" data-bs-target="#Login"
                   class="border-0 bg-transparent text-primary text-decoration-underline">Login Here</button>
               </p>
             </div>
@@ -210,7 +208,7 @@
               <!-- captcha -->
 
               <p class="text-center">
-                Don't Have an Account? <button data-bs-toggle="modal" data-bs-target="#Register"
+                Don't Have an Account? <button type="button" data-bs-toggle="modal" data-bs-target="#Register"
                   class="text-primary bg-transparent border-0 text-decoration-underline">Sign up Here</button>
               </p>
               <p class="text-center">or</p>
