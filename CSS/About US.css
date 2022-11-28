@@ -16,22 +16,7 @@ header h1 {
 }
 
 .bgTeam {
-    background-color: #d2d6de;
-}
-
-/* .bgCSS {
-    background-color: #e5e5f7;
-    opacity: 1;
-    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 30px 30px, linear-gradient(#f792454b 2.4000000000000004px, transparent 2.4000000000000004px) 0 -1.2000000000000002px, linear-gradient(90deg, #f792455a 2.4000000000000004px, #e5e5f7 2.4000000000000004px) -1.2000000000000002px 0;
-    background-size: 60px 60px, 60px 60px, 30px 30px, 30px 30px;
-    z-index: 0;
-} */
-
-.col-ceo {
-    max-width: 300px;
-    max-height: 300px;
-    /* width: 25%; */
-    margin: 0 auto;
+    background-color: #ffffff;
 }
 
 .col-team {
@@ -44,23 +29,16 @@ header h1 {
 }
 
 .card {
-    /* padding-bottom: 20px; */
     height: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* .teamcard {
-    border: 1px solid black;
-} */
   
 .con-team {
     height: 200px;
     padding: 0;
 }
-/*   
-.title-pos {
-    color: grey;
-} */
+
 
 .soc-med {
     color: rgb(200, 246, 255);
@@ -95,8 +73,8 @@ header h1 {
 }
 
 .partner-icon img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin-top: 16px;
     object-fit: cover;
 }
@@ -107,8 +85,8 @@ header h1 {
 }
 
 .partnerImg {
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 32px;
+    background-color: rgba(226, 227, 234, 0.784);
+    border-radius: 1em;
 }
 
 /** <hr> **/
@@ -127,7 +105,7 @@ header h1 {
     position: absolute;
     margin-right: 16px;
     opacity: 0;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 700;
   }
 
@@ -138,23 +116,12 @@ header h1 {
     height: auto;
 }
 
-.bg-gene {
-    background-color: #45a7c5b8;
-}
-
-.geneTxt {
-    color: rgb(19, 19, 56);
-    border-radius: 16px;
-    padding: 8px 16px;
-    margin-left: 8px;
-}
-
 .bg-dave {
-    background-color: #efb8fd;
+    background-color: #87366f;
 }
 
 .daveTxt {
-    color: rgb(19, 19, 56);
+    color: white;
     border-radius: 16px;
     padding: 8px 16px;
     margin-left: 8px;
@@ -162,33 +129,33 @@ header h1 {
     
 
 .bg-edsel {
-    background-color: #eeff70;
+    background-color: #848e3d;
 }
 
 .edselTxt {
-    color: rgb(19, 19, 56);
+    color: white;
     border-radius: 16px;
     padding: 8px 16px;
     margin-left: 8px;
 }
 
 .bg-gab {
-    background-color: #fdb98b;
+    background-color: #d18654;
 }
 
 .gabTxt {
-    color: rgb(19, 19, 56);
+    color: white;
     border-radius: 16px;
     padding: 8px 16px;
     margin-left: 8px;
 }
 
 .bg-kris {
-    background-color: #ffc7d7;
+    background-color: #c6738a;
 }
 
 .krisTxt {
-    color: rgb(19, 19, 56);
+    color: white;
     border-radius: 16px;
     padding: 8px 16px;
     margin-left: 8px;
@@ -207,7 +174,7 @@ header h1 {
 
 @media all and (max-width: 576px) {
     .partner-icon img {
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
     }
 }
