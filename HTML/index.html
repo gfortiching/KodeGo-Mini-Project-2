@@ -18,12 +18,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    .toast {
+      background-color: rgb(131, 58, 186);
+    }
+  </style>
 </head>
 
 <body>
 
-
-  <!-- push dave -->
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
     <div class="container-fluid">
@@ -79,7 +82,7 @@
           </li>
 
         </ul>
-        <form class="d-block text-center d-lg-flex flex-column flex-lg-row justify-content-center gap-2">
+        <form class="d-block text-center d-lg-flex flex-column flex-lg-row justify-content-center gap-2 me-lg-5">
           <button type="button" class="btn btn-1" data-bs-toggle="modal" data-bs-target="#Register">
             Register <i class="fas fa-clipboard"></i></button>
           <br class="d-flex d-lg-none">
@@ -107,31 +110,31 @@
           <form action="#">
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
-              <input type="text" class="form-control" placeholder="Firstname">
+              <input type="text" class="form-control" placeholder="Firstname" required>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
-              <input type="text" class="form-control" placeholder="Last Name">
+              <input type="text" class="form-control" placeholder="Last Name" required>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-              <input type="email" class="form-control" placeholder="Email">
+              <input type="email" class="form-control" placeholder="Email" required>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa fa-lock"></i></span>
-              <input type="password" class="form-control" placeholder="Password">
+              <input type="password" class="form-control" placeholder="Password" required>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="fa fa-lock"></i></span>
-              <input type="password" class="form-control" placeholder="Confirm Password">
+              <input type="password" class="form-control" placeholder="Confirm Password" required>
             </div>
             <div class="d-grid">
-              <button type="button" class="btn btn-success mb-3">Signup Now</button>
+              <button type="button" class="btn btn-success mb-3">Sign Up Now</button>
               <p class="text-center text muted">When You Register by Clicking Signup Button, You Agree to our
                 <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
               </p>
               <p class="text-center">
-                Already Have an Account? <button data-bs-toggle="modal" data-bs-target="#Login"
+                Already Have an Account? <button type="button" data-bs-toggle="modal" data-bs-target="#Login"
                   class="border-0 bg-transparent text-primary text-decoration-underline">Login Here</button>
               </p>
             </div>
@@ -210,7 +213,7 @@
               <!-- captcha -->
 
               <p class="text-center">
-                Don't Have an Account? <button data-bs-toggle="modal" data-bs-target="#Register"
+                Don't Have an Account? <button type="button" data-bs-toggle="modal" data-bs-target="#Register"
                   class="text-primary bg-transparent border-0 text-decoration-underline">Sign up Here</button>
               </p>
               <p class="text-center">or</p>
@@ -248,8 +251,7 @@
           <h1 class="text-center text-md-start introText">Learn with <br>Little Wizards!</h1>
           <p class="mt-4 text-center text-md-start">E-Learn is an award winning online learning platform for kids! Learn
             online with or without a teacher.</p>
-          <button class="btn btnHero text-white" type="button">Learn For Free<i
-              class="fa-solid fa-book ms-3"></i></button>
+          <button class="btn btnHero text-white" type="button"><a href="/Sign Up Process/SignUp1.html" class="text-decoration-none text-white">Learn For Free</a><i class="fa-solid fa-book ms-3"></i></button>
         </div>
       </div>
     </div>
@@ -383,6 +385,18 @@
     </div>
 
   </footer>
+
+  <!--Toast-->
+
+<div class="toast toast-demo align-items-center text-white w-auto fixed-bottom mb-1 border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-body text-center fs-6">
+    This website uses <strong>cookies</strong> in order to offer you a smooth learning experience! Please accept cookies for best performance.  <span><a href="#" class="text-white">Learn more.</a></span>
+  </div>
+  <div class="pt-2 pb-2 text-center">
+    <button type="button" class="btn btn-light btn-sm" data-bs-dismiss="toast">Yes, I accept cookies.</button>
+    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Reject</button>
+  </div>
+</div>
 
 
   <!-- Footer Section End -->

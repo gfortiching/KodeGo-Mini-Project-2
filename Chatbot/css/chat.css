@@ -1,0 +1,180 @@
+.chat-bar-collapsible {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+}
+
+.collapsible {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    width: 350px;
+    text-align: center;
+    outline: none;
+    font-size: 1.5em;
+    border-radius: 10px 10px 0px 0px;
+    border: 0;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.full-chat-block {
+    width: 350px;
+    background: white;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: 500px;
+    transition: max-height 0.2s ease-out;
+}
+
+.outer-container {
+    height: 390px;
+    bottom: 0%;
+    position: relative;
+}
+
+#chat-timestamp {
+    margin-top: 11em;
+}
+
+.chat-container {
+    height: 440px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    /* hyphens: auto; */
+}
+
+.chat-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-bar-input-block {
+    display: flex;
+    gap: 0.6em;
+    float: left;
+    position: sticky;
+    bottom: 0%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+    float: right;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin: 0;
+}
+
+#chat-icon {
+    margin: 0;
+    background-color: rgb(220, 158, 42);
+    color: white;
+    padding: 0.3em 0.8em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#chat-icon:hover {
+    opacity: .7;
+}
+
+/* Chat bubbles */
+
+#userInput {
+    width: 75%;
+}
+
+.input-box {
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: white;
+    outline: none
+}
+
+.userText {
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #e4deff;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+}
+
+.botText {
+    color: #000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #fff2c9;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards
+}
+
+@media screen and (max-width:600px) {
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+        border: 0px;
+        border-top: 3px solid white;
+        border-radius: 0px;
+    }
+}
+
+.wizard {
+    width: 50px;
+}
+
+.quizMaster {
+    margin-top: 1em;
+}
