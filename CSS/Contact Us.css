@@ -1,0 +1,103 @@
+* {
+  border: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+  .info-box {
+    color: #444444;
+    background: #fff;
+    padding: 0;
+    margin: auto;
+  }
+
+  #info-box0 {
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.812);
+    background: #fff;
+    border-radius: 4px;
+    padding: 0;
+  }
+
+  #info-box1{
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    background: #fff;
+    border-radius: 4px;
+    padding: 0;
+  }
+
+  #info-box2{
+    color: hsl(0, 0%, 27%);
+    text-align: center;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    background: #fff;
+    border-radius: 4px;
+    padding: 0;
+  }
+  
+  .info-box i {
+    font-size: 20px;
+    color: #F5751D;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .info-box h3 {
+    font-size: 20px;
+    color: #334242;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  .info-box p {
+    /* padding: 0; */
+    line-height: 24px;
+    font-size: 14px;
+    /* margin-bottom: 0; */
+  }
+  
+  .email-form {
+    background: #ffd9c0;
+    padding: 1em;
+    border-radius: 4px;
+    margin: 0 auto;
+    width: auto;
+  }
+  
+  .email-form input,
+  .email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .email-form input:focus,
+  .email-form textarea:focus {
+    border-color: #00c1c1;
+  }
+  
+  .email-form input {
+    padding: 10px 15px;
+  }
+  
+  .email-form textarea {
+    padding: 12px 15px;
+  }
+  
+  .email-form button[type=submit] {
+    background: #F5751D;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .email-form button[type=submit]:hover {
+    background: darkem(#00c1c1, 5);
+  }
+
+  

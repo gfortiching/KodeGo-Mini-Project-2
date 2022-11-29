@@ -1,20 +1,3 @@
-/* HEADER */
-header {
-    border: 0;
-    margin: 0;
-    background: #ffffff;
-    color: #F5751D;
-}
-
-header h1 {
-    text-align: center;
-    font-size: 48px;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 5px;
-    margin-top: 96px;
-    margin-bottom: 16px;
-}
-
 .bgTeam {
     background-color: #ffffff;
 }
@@ -67,7 +50,7 @@ header h1 {
 }
 
 .sec-title {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Kavoon', cursive;
     padding-top: 40px;
     padding-bottom: 20px;
 }
@@ -118,6 +101,7 @@ header h1 {
 
 .bg-dave {
     background-color: #87366f;
+    cursor: pointer;
 }
 
 .daveTxt {
@@ -130,6 +114,7 @@ header h1 {
 
 .bg-edsel {
     background-color: #848e3d;
+    cursor: pointer;
 }
 
 .edselTxt {
@@ -141,6 +126,7 @@ header h1 {
 
 .bg-gab {
     background-color: #d18654;
+    cursor: pointer;
 }
 
 .gabTxt {
@@ -152,6 +138,7 @@ header h1 {
 
 .bg-kris {
     background-color: #c6738a;
+    cursor: pointer;
 }
 
 .krisTxt {
@@ -159,6 +146,16 @@ header h1 {
     border-radius: 16px;
     padding: 8px 16px;
     margin-left: 8px;
+}
+
+/** Core Values **/
+
+.valuesImg {
+    width: 125px;
+}
+
+.values {
+    padding: 4em 0;
 }
 
 @media only screen and (max-width: 720px) {
