@@ -1,0 +1,470 @@
+:root {
+  --color-1: #7053c9;
+  --color-2: #413074;
+  --color-3: #797983;
+  --color-4: #EFBD9D;
+  --color-5: #FCA26E;
+  --color-6: #F5751D;
+  --white: #ffffff;
+  --black: #000000;
+  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --facebook: #3b5998;
+  --twitter: #55acce;
+  --instagram: #e93b81;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+
+/* student/teacher dashboard */
+
+#main-parts nav {
+  padding: 40px 15px;
+  height: 100vh;
+}
+
+#main-parts nav ul li a {
+  display: inline-block;
+  color: var(--black);
+  background: var(--white);
+  border-radius: 15px;
+  padding: 15px 25px;
+}
+
+#main-parts nav ul li a i {
+  font-size: 25px;
+  color: var(--color-6);
+}
+
+#main-parts nav ul li .navitems.active i {
+  color: var(--white);
+}
+
+#main-parts nav ul li a span {
+  display: inline-block;
+  font-size: 18px;
+  color: var(--black);
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+#main-parts nav ul li .navitems.active {
+  background: var(--color-5);
+  color: var(--white);
+  padding: 15px 25px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+#main-parts nav ul li .navitems.active span {
+  font-weight: 400;
+}
+
+#main-parts nav ul .navitems.active a {
+  color: var(--white);
+}
+
+#main-parts nav ul .navitems.active span {
+  color: var(--white);
+}
+
+#main-parts .dash-body {
+  background: var(--color-5);
+  padding-bottom: 100px;
+  height: auto;
+}
+
+#main-parts .dash-body .inner-nav ul {
+  border-bottom: 2px solid var(--white);
+}
+
+#main-parts .dash-body .inner-nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 40px;
+  padding: 15px 0;
+}
+
+#main-parts .dash-body .inner-nav ul li a {
+  display: inline-block;
+  color: var(--black);
+  font-weight: 600;
+}
+
+#main-parts .dash-body .inner-nav ul li .course {
+  position: relative;
+}
+
+#main-parts .dash-body .inner-nav ul li .course::after {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  left: -40px;
+  width: 0px;
+  height: 2px;
+  background: var(--color-5);
+}
+
+#main-parts .dash-body .inner-nav ul li .course.activeCourse {
+  color: var(--white);
+}
+
+#main-parts .dash-body .inner-nav ul li .course.activeCourse::after {
+  width: 160px;
+  background: var(--color-1);
+}
+
+/* Teacher Details Start */
+
+#main-parts .dash-body .details {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#main-parts .dash-body .details .top {
+  background: linear-gradient(288.26deg, #E42313 -8.52%, #F68B1F 129.05%);
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+}
+
+#main-parts .dash-body .details .top .img {
+  width: 25%;
+  margin-left: 2rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
+
+#main-parts .dash-body .details .top .img img {
+  width: 100%;
+}
+
+#main-parts .dash-body .details .top .sub-details {
+  width: 72%;
+  margin-left: 1.5rem;
+  margin-top: -10px;
+}
+
+#main-parts .dash-body .details .top .sub-details h2 {
+  font-size: 45px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+#main-parts .dash-body .details .top .sub-details h6 {
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+#main-parts .dash-body .details .top .sub-details .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+}
+
+#main-parts .dash-body .details .top .sub-details .button h3 {
+  color: var(--white);
+  font-weight: 700;
+}
+
+#main-parts .dash-body .details .top .sub-details .button a {
+  display: inline-block;
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 700;
+  background: var(--color-5);
+  border: 1px solid var(--color-5);
+  border-radius: 10px;
+  padding: 12px 40px;
+  margin-top: -26px;
+  margin-right: 20px;
+  filter: drop-shadow(0 1rem 0.75rem rgba(0, 0, 0, 0.13));
+}
+
+/* Teacher Details End */
+
+/* Personal Details Start */
+
+#main-parts .dash-body .details .bottom {
+  padding: 40px 50px;
+}
+
+#main-parts .dash-body .details .bottom .header h3 {
+  font-size: 26px;
+  color: var(--black);
+  font-weight: 700;
+}
+
+#main-parts .dash-body .details .bottom table {
+  margin-top: 30px;
+}
+
+#main-parts .dash-body .details .bottom table tr td {
+  font-size: 18px;
+  color: var(--black);
+  font-weight: 400;
+  line-height: 39px;
+}
+
+/* Personal Details End */
+
+
+/* About Start */
+
+#main-parts .dash-body .status {
+  background: linear-gradient(289.02deg, #E42313 30.75%, #F68B1F 130.01%);
+  border-radius: 15px;
+  padding: 30px 50px;
+
+}
+
+#main-parts .dash-body .status .header h4 {
+  font-size: 26px;
+  color: var(--black);
+  font-weight: 700;
+}
+
+#main-parts .dash-body .status table {
+  margin-top: 27px;
+}
+
+#main-parts .dash-body .status table tr td {
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 39px;
+}
+
+#main-parts .dash-body table tr .mltd {
+  padding-left: 60px;
+}
+
+#main-parts .dash-body .inner-status {
+  margin-top: 50px;
+}
+
+#main-parts .dash-body .inner-status .all-status {
+  background: rgba(196, 196, 196, 0.18);
+  border-radius: 15px;
+  padding: 17px 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-parts .dash-body .inner-status .all-status h5 {
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 28px;
+}
+
+#main-parts .dash-body .inner-status .all-status a {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--white);
+  font-weight: 500;
+  background: #E42313;
+  border-radius: 5px;
+  padding: 3px 11px;
+
+}
+
+#main-parts .dash-body .inner-status .all-status .btn-done {
+  background: var(--color-6);
+}
+
+/* About End */
+
+#main-parts .dash-body .education {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 23px 28px;
+  margin-top: 15px;
+}
+
+#main-parts .dash-body .education h4 {
+  font-size: 26px;
+  color: var(--black);
+  font-weight: 700;
+  line-height: 31px;
+}
+
+#main-parts .dash-body .education .edu-value {
+  background: var(--white);
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#main-parts .dash-body .education .edu-value h4 {
+  font-size: 30px;
+  color: #E42313;
+  font-weight: 600;
+  line-height: 39px;
+}
+
+#main-parts .dash-body .education .edu-value h6 {
+  font-size: 18px;
+  color: var(--black);
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 20px;
+}
+
+#main-parts .dash-body .education .edu-value h6 span {
+  display: block;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project {
+  background: var(--white);
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 30px 15px;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project .inner-pro {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 30px;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project .inner-pro p {
+  font-size: 18px;
+  color: var(--black);
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project span {
+  display: flex;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project h6 {
+  font-size: 20px;
+  color: var(--black);
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project a {
+  display: inline-block;
+  font-size: 16px;
+  color: #007AFF;
+  font-weight: 400;
+  margin-top: 18px;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project .inner-pro span i {
+  font-size: 20px;
+  color: var(--color-6);
+  line-height: 24px;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project .header h4 {
+  display: inline-block;
+  font-size: 26px;
+  color: var(--black);
+  font-weight: 700;
+  line-height: 31px;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project button {
+  width: 100%;
+  color: var(--white);
+  background: var(--color-5);
+  border: 1px solid var(--color-5);
+  border-radius: 10px;
+  padding: 18px;
+  outline: 0;
+  margin-top: 30px;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project button i {
+  font-size: 25px;
+}
+
+#main-parts .dash-body .fa_stu_status .exam-project button h6 {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+}
+
+#main-parts .dash-body .student-status {
+  background: var(--white);
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+#main-parts .dash-body .student-status .header h4 {
+  font-size: 26px;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 31px;
+}
+
+#main-parts .dash-body .student-status .box-item {
+  background: var(--white);
+  padding: 40px 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+#main-parts .dash-body .student-status .box-item p {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+#main-parts .dash-body .student-status .box-item h5 {
+  font-size: 30px;
+  color: var(--black);
+  font-weight: 600;
+  line-height: 34px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#main-parts .dash-body .student-status .student-progress {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#main-parts .dash-body .student-status .student-progress h6 {
+  font-size: 20px;
+  color: var(--black);
+  font-weight: 600;
+  line-height: 23px;
+  margin-top: 17px;
+}
+
+#main-parts .dash-body .student-status .student-progress .percent {
+  margin: 0 auto;
+  margin-top: 35px !important;
+}
+
+#main-parts .dash-body .fa_stu_status button {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+}

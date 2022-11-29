@@ -108,6 +108,20 @@
   transform: scale(1);
 }
 
+/* --------------modal----------------- */
+
+.log-icon {
+  color: var(--white);
+  font-size: 30px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+
+.log-icon a:hover {
+  color: var(--color-6);
+}
+
 /* --------------Hero Section------------------ */
 
 .heroImg {
