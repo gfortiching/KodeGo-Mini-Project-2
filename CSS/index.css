@@ -1,0 +1,492 @@
+:root {
+    --color-1: #7053c9;
+    --color-2: #413074;
+    --color-3: #797983;
+    --color-4: #EFBD9D;
+    --color-5: #FCA26E;
+    --color-6: #F5751D;
+    --white: #ffffff;
+    --black: #000000;
+    --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+    --facebook: #3b5998;
+    --twitter: #55acce;
+    --instagram: #e93b81;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+  .navbar {
+    background: rgb(92, 77, 151);
+    z-index: 999;
+  }
+  
+  .navbar-brand {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .nav-item {
+    padding-left: 0;
+  }
+  
+  @media all and (min-width: 992px) {
+    .nav-item {
+      padding-left: 0;
+      margin-left: 1em;
+    }
+  }
+  
+  .nav-link {
+    color: var(--white);
+    font-weight: 500;
+  }
+  
+  .navbar-brand:hover,
+  .nav-link:hover {
+    color: var(--color-4);
+    transition: 0.3s;
+  }
+  
+  .btn-1 {
+    background-color: var(--color-6);
+    color: var(--white);
+    padding: 8px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .btn-1:hover {
+    color: var(--black);
+    transition: 0.3s;
+    background-color: var(--color-4);
+  }
+  
+  .btnHero {
+    background-color: var(--color-6);
+    color: var(--black);
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 300px;
+  }
+  
+  .btnHero:hover {
+    color: var(--color-6);
+    transition: 0.3s;
+    transition: 0.3s;
+    background-color: var(--color-4);
+  }
+  
+  .navbar .nav-item .nav-link {
+    position: relative;
+  }
+  
+  .navbar .nav-item .nav-link::before {
+    content: "";
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--color-6);
+    transition: all 0.5s ease;
+    transform: scale(0);
+  }
+  
+  .navbar .nav-item .nav-link.active::before,
+  .navbar .nav-item .nav-link:hover::before {
+    transform: scale(1);
+  }
+
+  /* --------------modal----------------- */
+
+    .log-icon {
+    color: var(--white);
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .log-icon a:hover {
+    color: var(--color-6);
+  }
+  
+  
+  /* --------------Hero Section------------------ */
+  
+  .heroImg {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    height: 600px;
+    background-color: #D4E4FF;
+    z-index: -1;
+  }
+  
+  .heroIconMath {
+    position: absolute;
+    right: 10%;
+    width: 300px;
+  }
+  
+  @media all and (max-width: 768px) {
+    .heroIconMath {
+      position: static;
+      /* right: 0; */
+      margin: 6em auto 0; 
+      width: 150px;
+    }
+  }
+  
+  .main {
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero .hero-text img {
+    margin: 0 0 30px;
+  }
+  
+  .main h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  @media all and (max-width: 576px) {
+    .main h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .main p {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .section-title h2 {
+    font-size: 40px;
+    color: var(--color-6);
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .section-title h2 span {
+    color: var(--color-1);
+  }
+  
+  
+  /* --------------Footer------------------ */
+  
+  .footer-section {
+    background-color: var(--color-2);
+    /* position: relative; */
+  }
+  
+  .footer-cta {
+    margin-bottom: 1em;
+  }
+  
+  .single-cta {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .single-cta i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    text-align: center;
+    line-height: 38px;
+  }
+  
+  .cta-text {
+    padding-left: 15px;
+    display: inline-block;
+    margin-top: 1em;
+  }
+  
+  .footer-content {
+    z-index: 2;
+  }
+  
+  .footer-logo img {
+    max-width: 200px;
+  }
+  
+  .footer-social-icon span {
+    color: var(--white);
+    margin-bottom: 15px;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .footer-social-icon a {
+    color: var(--white);
+    margin-bottom: 15px;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  .footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+  }
+  
+  .facebook-bg {
+    background: var(--facebook);
+  }
+  
+  .discord-bg {
+    background: var(--facebook);
+  }
+  
+  .instagram-bg {
+    background: var(--instagram);
+  }
+  
+  .twitter-bg {
+    background: var(--twitter);
+  }
+  
+  .pinterest-bg {
+    background: red;
+  }
+  
+  .footer-widget-heading h3 {
+    color: var(--white);
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  
+  .footer-widget-heading h3::before {
+    content: "";
+    /* position: absolute; */
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 150px;
+    background-color: var(--color-6);
+  }
+  
+  .footer-widget ul li {
+    color: var(--white);
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .footer-widget ul li a {
+    color: var(--white);
+    text-transform: capitalize;
+  }
+  
+  .footer-widget ul li a:hover {
+    color: var(--color-6);
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-direction: row;
+    max-width: 350px;
+  }
+  
+  .subscribe-form input {
+    outline: none;
+    padding: 15px 30px;
+    background: var(--white);
+    border: 2px solid var(--color-6);
+    color: var(--black);
+  }
+  
+  .subscribe-form button {
+    padding: 1em 1em;
+    background: var(--color-6);
+    border: 1px solid var(--color-6);
+  }
+  
+  .subscribe-form button i {
+    color: var(--white);
+    font-size: 20px;
+    transform: rotate(-6deg);
+  }
+  
+  .copyright-area {
+    padding: 25px 0;
+  }
+  
+  .copyright-text p {
+    color: var(--white);
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .copyright-text p a {
+    color: var(--color-6);
+  }
+  
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .footer-menu li a {
+    color: var(--black);
+    font-size: 20px;
+  }
+  
+  .footer-menu li a:hover {
+    color: var(--color-6);
+  }
+  
+  /** Added CSS by Gab **/
+  
+  .heroDiv h1 {
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 8px;
+    padding: 0 1em 0;
+  }
+  
+  .heroDiv p {
+    font-family: 'Patrick Hand', cursive;
+    padding: 0 1em 0;
+  }
+  
+  @media all and (min-width: 768px) {
+    .heroDiv h1 {
+      font-family: 'Patrick Hand', cursive;
+      letter-spacing: 8px;
+      padding: 0;
+    }
+  
+    .heroDiv p {
+      font-family: 'Patrick Hand', cursive;
+      padding: 0;
+    }
+  }
+  
+  .infoBox {
+    width: 1120px;
+    /* height: 300px; */
+    color: #1f1246;
+    font-family: 'Patrick Hand', cursive;
+  }
+  
+  .infoBox h4 {
+    margin-top: 1em;
+  }
+  
+  .infoBox1 {
+    border-radius: 2em;
+    padding-bottom: 2em;
+  }
+  
+  .infoBox1:hover {
+    background-color: #e7ffcf;
+  }
+  
+  .infoBox2 {
+    border-radius: 2em;
+    padding-bottom: 2 em;
+  }
+  
+  .infoBox2:hover {
+    background-color: #ffe1d0;
+  }
+  
+  .infoBox3 {
+    border-radius: 2em;
+    padding-bottom: 2 em;
+  }
+  
+  .infoBox3:hover {
+    background-color: #dfc9ff;
+  }
+  
+  .infoBox4 {
+    border-radius: 2em;
+    padding-bottom: 2 em;
+  }
+  
+  .infoBox4:hover {
+    background-color: #cdf3ff;
+  }
+  
+  .logo {
+    width: 60px;
+    margin-left: 2em;
+  }
+  
+  .logo:hover {
+    box-shadow: 0 0 10px rgb(52, 28, 91);
+    border-radius: 50%;
+  }
+  
+  /** Span Nav List **/
+  
+  .spanList {
+    margin-left: 4.5em;
+  }
+  
+  /** Toast **/
+  
+  .toast {
+    background-color: rgb(131, 58, 186);
+    font-family: 'Patrick Hand', cursive;
+  }
+  
+  .toast p {
+    font-size: 1.2em;
+  }
+  
+  .yesCookies {
+    background: linear-gradient(to right, rgb(232, 177, 82), rgb(223, 108, 26));
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  
+  .noCookies {
+    background-color: rgb(223, 206, 206);
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  
+  @media all and (max-width: 992px) {
+    .spanList {
+      margin-left: 0;
+    }
+  }

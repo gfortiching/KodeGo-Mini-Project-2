@@ -9,20 +9,18 @@ function getBotResponse(input) {
         return "I understand. You can go back to our lessons and have a review.";
     }
 
-    else {
-        return "Oh, what was that again?";
-    }
-};
-
-function getBotResponse2(input) {
-    
-        
-    if (input == "50") {
+    else if (input == "50") {
         let answer1 = 5 * (5 + 5);
         return "Great job! The answer is " + answer1 + ".";
     } 
 
-        else {
-            return "Nice try! But that is not the correct answer.";
+    else {
+        return "Oh, what was that again?";
     }
 };
+         
+
+
+    //     else {
+    //         return "Nice try! But that is not the correct answer.";
+    // }

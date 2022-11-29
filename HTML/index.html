@@ -13,16 +13,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- Main css -->
-  <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="stylesheet" href="/CSS/index.css">
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <style>
-    .toast {
-      background-color: rgb(131, 58, 186);
-    }
-  </style>
 </head>
 
 <body>
@@ -244,19 +239,18 @@
   <!-- Navbar End -->
 
   <!-- Hero Section Start -->
-  <section class="main d-flex align-items-center">
-    <div class="container pt-5 heroDiv">
-      <div class="row">
-        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center d-md-block">
+  <section class="main d-flex flex-column flex-md-row justify-content-center align-items-center">
+      <div class="container row ps-0 pe-0 pt-3 heroDiv order-1">
+        <div class="col-md-6 p-0 d-flex flex-column">
           <h1 class="text-center text-md-start introText">Learn with <br>Little Wizards!</h1>
           <p class="mt-4 text-center text-md-start">E-Learn is an award winning online learning platform for kids! Learn
             online with or without a teacher.</p>
-          <button class="btn btnHero text-white" type="button"><a href="/Sign Up Process/SignUp1.html" class="text-decoration-none text-white">Learn For Free</a><i class="fa-solid fa-book ms-3"></i></button>
+          <button class="btn btnHero m-auto ms-md-0 text-white" type="button"><a href="/Sign Up Process/SignUp1.html" class="text-decoration-none text-white">Learn For Free</a><i class="fa-solid fa-book ms-3"></i></button>
         </div>
       </div>
-    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/2436/2436648.png" class="heroIconMath order-0">
   </section>
-  <img src="/Landing Page/images/cloud.png" class="heroImg">
+
   <!-- Hero Section End -->
 
   <!--Site Info-->
@@ -323,50 +317,28 @@
       </div>
       <div class="footer-content">
         <div class="row">
-          <div class="col-lg-4">
+
+          <div class="col ms-5">
             <div class="footer-widget">
-              <div class="footer-logo">
-                <a href=""><img src="/Landing Page/images/logo.png" class="img-fluid"></a>
+              <div class="footer-widget-heading">
+                <h4 class="text-white">Subscribe</h4>
               </div>
-              <div class="footer-social-icon">
-                <span>Follow Us</span>
+              <div class="footer-text text-white">
+                <p>Don't miss our exclusive offers!</p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address" required>
+                  <button><i class="fa-brands fa-telegram"></i></button>
+                </form>
+              </div>
+              <div class="footer-social-icon mt-5">
+                <span>Follow us on Social Media</span>
                 <a href="#"><i class="fa-brands fa-facebook-f facebook-bg"></i></a>
                 <a href="#"><i class="fa-brands fa-discord discord-bg"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram instagram-bg"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter twitter-bg"></i></a>
                 <a href="#"><i class="fa-brands fa-pinterest-p pinterest-bg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="footer-widget">
-              <div class="footer-widget-heading">
-                <h3>Quick Links</h3>
-              </div>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Latest News</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="footer-widget">
-              <div class="footer-widget-heading">
-                <h3>Subscribe</h3>
-              </div>
-              <div class="footer-text">
-                <p>Don't miss to Subscribe</p>
-              </div>
-              <div class="subscribe-form">
-                <form action="#">
-                  <input type="text" placeholder="Email Address">
-                  <button><i class="fa-brands fa-telegram"></i></button>
-                </form>
               </div>
             </div>
           </div>
@@ -389,12 +361,11 @@
   <!--Toast-->
 
 <div class="toast toast-demo align-items-center text-white w-auto fixed-bottom mb-1 border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="toast-body text-center fs-6">
-    This website uses <strong>cookies</strong> in order to offer you a smooth learning experience! Please accept cookies for best performance.  <span><a href="#" class="text-white">Learn more.</a></span>
+  <div class="toast-body text-center fs-6"><p class="m-0">This website uses <strong>cookies</strong> in order to offer you a smooth learning experience! Please accept cookies for best performance.  <span><a href="#" class="text-primary">Learn more.</a></p></span>
   </div>
   <div class="pt-2 pb-2 text-center">
-    <button type="button" class="btn btn-light btn-sm" data-bs-dismiss="toast">Yes, I accept cookies.</button>
-    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Reject</button>
+    <button type="button" class="btn btn-sm yesCookies" data-bs-dismiss="toast">Yes, I accept cookies.</button>
+    <button type="button" class="btn btn-sm noCookies" data-bs-dismiss="toast">Reject</button>
   </div>
 </div>
 
