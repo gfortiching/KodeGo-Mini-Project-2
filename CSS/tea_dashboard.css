@@ -209,7 +209,7 @@
 }
 
 #main-parts .dash-body .details .bottom table {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 #main-parts .dash-body .details .bottom table tr td {
@@ -290,45 +290,45 @@
 
 /* About End */
 
-#main-parts .dash-body .education {
+
+/* -----Review Start----- */
+#main-parts .dash-body .review {
   background: var(--white);
   border-radius: 15px;
   padding: 23px 28px;
   margin-top: 15px;
 }
 
-#main-parts .dash-body .education h4 {
+#main-parts .dash-body .review h4 {
   font-size: 26px;
   color: var(--black);
   font-weight: 700;
   line-height: 31px;
 }
 
-#main-parts .dash-body .education .edu-value {
+#main-parts .dash-body .review .review-value {
   background: var(--white);
-  margin-top: 30px;
+  margin-top: 5px;
   padding: 20px;
   border-radius: 10px;
 }
 
-#main-parts .dash-body .education .edu-value h4 {
-  font-size: 30px;
+#main-parts .dash-body .review .review-value h4 {
+  font-size: 20px;
   color: #E42313;
   font-weight: 600;
   line-height: 39px;
 }
 
-#main-parts .dash-body .education .edu-value h6 {
+#main-parts .dash-body .review .review-value h6 {
   font-size: 18px;
   color: var(--black);
   font-weight: 400;
   line-height: 21px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
-#main-parts .dash-body .education .edu-value h6 span {
-  display: block;
-}
+/* -----Review END----- */
 
 #main-parts .dash-body .fa_stu_status .exam-project {
   background: var(--white);
