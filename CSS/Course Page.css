@@ -43,7 +43,9 @@ header h1 {
 .course-details-side {
     background-color: #d7e0e1;
     border-radius: 2em;
-    margin: 0 1.3em;
+    margin: 0 2em;
+    max-width: 300px;
+    height: 500px;
     padding: 1.3em 0;
 }
 
@@ -52,7 +54,7 @@ header h1 {
 }
 
 .aside {
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .enroll-div {

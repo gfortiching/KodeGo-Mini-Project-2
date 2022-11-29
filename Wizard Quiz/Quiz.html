@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/Wizard Quiz/Quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patrick+Hand&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-dark">
+<section>
+    <!-- CHAT BAR BLOCK -->
+    <div class="quizMaster">
+        <img src="/Landing Page/images/wizard.png" class="wizard">
+        <h2>Wizard Quiz Master</h2>
+    </div>
+    <div class="chat-bar-collapsible">
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox" class="d-flex flex-column justify-content-center mt-3">
+                            <h3 id="chat-timestamp" class="mt-2 mb-4"></h3>
+                            <p id="botStarterMessage" class="botText"><span>...</span></p>
+                            <p id="botStarterMessage2" class="botText"><span>...</span></p>
+                            <p id="botStarterMessage3" class="botText"><span>...</span></p>
+                        </div>
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User input box -->
+    <div class="chat-bar-input-block">
+        <div id="userInput">
+            <input id="textInput" class="input-box" type="text" name="msg" placeholder="Type your answer here...">
+        </div>
+        <div class="chat-bar-icons">
+            <p id="chat-icon" onclick="sendButton()">Send</p>
+        </div>
+    </div>
+</section>
+</body>
+<script src="https://kit.fontawesome.com/b8b5c0695c.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/Wizard Quiz/scripts/quiz.js"></script>
+<script src="/Wizard Quiz/scripts/questions.js"></script>
+
+</html>
