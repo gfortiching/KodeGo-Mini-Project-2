@@ -272,6 +272,18 @@
   .footer-logo img {
     max-width: 200px;
   }
+
+  .footer-social-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .socmedIcons {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+  }
   
   .footer-social-icon span {
     color: var(--white);
@@ -283,9 +295,8 @@
   
   .footer-social-icon a {
     color: var(--white);
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
     font-size: 20px;
-    margin-right: 15px;
   }
   
   .footer-social-icon i {
@@ -354,6 +365,7 @@
     display: flex;
     flex-direction: row;
     max-width: 350px;
+    margin: 0 auto;
   }
   
   .subscribe-form input {
@@ -371,7 +383,7 @@
   
   .subscribe-form button i {
     color: var(--white);
-    font-size: 20px;
+    font-size: 22px;
     transform: rotate(-6deg);
   }
   
@@ -419,6 +431,7 @@
   @media all and (min-width: 768px) {
     .heroDiv h1 {
       font-family: 'Kavoon', cursive;
+      font-size: 32px;
       letter-spacing: 8px;
       padding: 0;
     }
@@ -451,7 +464,7 @@
   
   .infoBox2 {
     border-radius: 2em;
-    padding-bottom: 2 em;
+    padding-bottom: 2em;
   }
   
   .infoBox2:hover {
@@ -460,7 +473,7 @@
   
   .infoBox3 {
     border-radius: 2em;
-    padding-bottom: 2 em;
+    padding-bottom: 2em;
   }
   
   .infoBox3:hover {
@@ -469,7 +482,7 @@
   
   .infoBox4 {
     border-radius: 2em;
-    padding-bottom: 2 em;
+    padding-bottom: 2em;
   }
   
   .infoBox4:hover {
@@ -477,13 +490,20 @@
   }
   
   .logo {
-    width: 60px;
+    width: 50px;
+    height: 50px;
     margin-left: 1em;
   }
   
   .logo:hover {
     box-shadow: 0 0 10px rgb(52, 28, 91);
     border-radius: 50%;
+  }
+
+  .logo-footer {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1em;
   }
   
   /** Span Nav List **/
@@ -496,6 +516,13 @@
     text-shadow: 0 0 5px rgb(223, 149, 74);
     color: rgb(92, 77, 151);;
   }
+
+  /** Font Family **/
+
+  .Kavoon {
+    font-family: 'Kavoon', cursive;
+    font-weight: 100;
+}
   
   /** Toast **/
   

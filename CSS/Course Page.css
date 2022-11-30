@@ -1,82 +1,94 @@
-.crumbBackground {
+body {
+    background-color: rgb(243, 235, 255);
+}
+
+.topSection {
     background: none;
-    margin-top:  1em;
+    margin-top: 7em;
     padding: 0;
 }
 
 .header h1 {
-    font-size: 2em;
-    font-family: 'Patrick Hand', cursive;
+    font-size: 2.8em;
+    font-family: 'Kavoon', cursive;
+    color: rgb(51, 36, 5);
     letter-spacing: 5px;
 }
 
 .header h6 {
     font-size: 1em;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Kavoon', cursive;
 }
 
 .course-details-top {
     border-radius: 0.5em;
-    background-color: #FCA26E;
+    background-color: #cdc3f9;
     color: black;
     font-weight: 500;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Kavoon', cursive;
 }
 
-.course-details-side {
-    background-color: #d7e0e1;
-    border-radius: 2em;
-    margin: 0 2em;
-    max-width: 300px;
-    height: 500px;
-    padding: 1.3em 0;
+.learn {
+    padding: 3em;
+    background-color: #cdc3f9;
+    border-radius: 1em;
 }
 
-.course-details-side p {
-    font-size: 0.8em;
+.learnImg {
+    width: 40px;
+    height: 40px;
+    margin-left: 2em;
 }
 
 .aside {
-    max-width: 60%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    position: relative;
 }
 
 .enroll-div {
-    padding-top: 0;
-    padding-bottom: 2em;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0;
-    float: right;
-    right: 2%;
-    top: 14%;
-    position: sticky;
-    width: 25%;
+    background-color: #5C4D97;
+    padding: 2em 2em;
+    border-radius: 1em;
+    max-width: 300px;
+}
+
+.wizard2 {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
 }
 
 .enroll-btn {
-    padding: 0.5em 1.7em;
+    margin: 0 auto;
+    padding: 0.7em 2em;
     border-radius: 0.5em;
     border: 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
     background: #FF791D;
     color: white;
+    font-family: 'Kavoon', cursive;
 }
 
 
 .enroll-btn:hover {
-    background-color: #0a848b;
+    background: #FF791D;
+    box-shadow: 0.3em 0.3em 1em rgb(40, 16, 86);
     color: white;
 }
 
 .course-button {
-    padding: 0.5em;
-    background: none;
-    font-family: 'Patrick Hand', cursive;
+    background-color: #cdc3f9;
+    border-radius: 1em;
+    padding: 0.8em;
+    font-family: 'Kavoon', cursive;
 }
 
 .course-button:hover {
     color: rgb(24, 23, 110);
-    text-shadow: 0.3em 0.3em 1em black;
+    box-shadow: 0.3em 0.3em 1em rgb(40, 16, 86);
 }
 
 .overview-img {
@@ -84,35 +96,18 @@
     height: 3em;
 }
 
-.patrickHand {
-    font-family: 'Patrick Hand', cursive;
+.Kavoon {
+    font-family: 'Kavoon', cursive;
 }
 
 .sansSerif {
     font-family: sans-serif;
 }
 
-.accordion-button {
-    font-size: 0.7em;
-}
-
-@media all and (max-width: 992px) {
-    .aside {
-        max-width: 95%;
-    }
-
-    .enroll-div {
-        float: none;
-        width: 85%;
-        position: static;
-        margin: auto;
-    }
-}
-
 @media all and (min-width: 576px) and (max-width: 768px) {
 
     .header h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .header h6 {
@@ -123,19 +118,10 @@
 @media all and (max-width: 576px) {
 
     .header h1 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .header h6 {
         font-size: 0.8em;
-    }
-
-    .enroll-btn {
-        padding: 0.3em 1.6em;
-        border-radius: 0.5em;
-        font-size: 1.2em;
-        background: #00B2BD;
-        color: white;
-        border: 0;
     }
 }
