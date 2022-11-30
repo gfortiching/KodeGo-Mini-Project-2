@@ -21,9 +21,11 @@
   list-style: none;
 }
 
-
-
 /* student/teacher dashboard */
+
+/* .asideNav {
+  position: fixed;
+} */
 
 #main-parts nav {
   padding: 40px 15px;
@@ -354,6 +356,10 @@
   filter: drop-shadow(0 1rem 0.75rem rgba(0, 0, 0, 0.13));
 }
 
+.education {
+  
+}
+
 #main-parts .dash-body .education {
   background: var(--white);
   border-radius: 15px;
@@ -479,7 +485,7 @@
 
 #main-parts .dash-body .student-status .header h4 {
   font-size: 26px;
-  color: var(--white);
+  color: var(--black);
   font-weight: 700;
   line-height: 31px;
 }

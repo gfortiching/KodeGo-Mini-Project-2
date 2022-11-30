@@ -10,9 +10,6 @@ $(".course").click(function () {
   $(this).addClass('activeCourse')
 })
 
-
-
-
 /*=====progress bar=====*/
 
 $('.percent').percentageLoader({

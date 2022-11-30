@@ -142,91 +142,87 @@
   
   /* --------------Hero Section------------------ */
   
-  .heroImg {
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    width: 100%;
-    height: 600px;
-    background-color: #D4E4FF;
-    z-index: -1;
-  }
-  
-  .heroIconMath {
-    position: absolute;
-    right: 10%;
-    width: 300px;
-  }
-  
-  @media all and (max-width: 992px) {
-    .heroIconMath {
-      position: static;
-      margin: 8em auto 0; 
-      width: 150px;
-    }
-  }
-  
   .heroSec {
-    background-size: cover;
+    background-color: #f5edff;
+    padding-top: 10em;
     min-height: 100vh;
     width: 100%;
     position: relative;
     z-index: 1;
-    background: #f8f1ff;
+  }
+
+  .heroIconMath {
+    /* position: absolute;
+    right: 5%; */
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
   }
   
-  .hero .hero-text img {
-    margin: 0 0 30px;
-  }
-  
-  .heroSec h1 {
-    font-size: 5rem;
-    font-weight: 700;
-  }
+  @media all and (max-width: 992px) {
 
-  .heroSec p {
-    font-size: 1.5rem;
-  }
-
-  @media all and (min-width: 576px) and (max-width: 768px) {
-    .heroSec h1 {
-      font-size: 2rem;
+    .heroSec {
+      margin-top: 5em;
+      padding-top: 2em;
+      padding-bottom: 4em;
+      min-height: 80vh;
+      width: 100%;
+      position: relative;
+      z-index: 1;
     }
 
-    .heroSec p {
-      font-size: 1.2rem;
-    }
-  }
-  
-  @media all and (max-width: 576px) {
-    .heroSec h1 {
-      font-size: 1.5rem;
-    }
-
-    .heroSec p {
-      font-size: 1rem;
+    .heroIconMath {
+      position: static;
+      margin: 0 auto; 
+      width: 300px;
+      height: 220px;
     }
   }
   
-  .section-title {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .heroDiv h1 {
+    font-family: 'Kavoon', cursive;
+    letter-spacing: 8px;
+    padding: 0 1em 0;
   }
   
-  .section-title h2 {
-    font-size: 40px;
-    color: var(--color-6);
-    font-weight: 700;
-    text-transform: capitalize;
-    text-align: center;
-    margin: 0;
+  .littleWizard {
+    color: rgb(92, 77, 151);;
   }
   
-  .section-title h2 span {
-    color: var(--color-1);
+  .heroDiv p {
+    font-family: 'Kavoon', cursive;
+    padding: 0 1em 0;
+    font-size: 1.4em;
   }
   
+  @media all and (min-width: 992px) {
+    .heroDiv h1 {
+      font-family: 'Kavoon', cursive;
+      font-size: 3em;
+      letter-spacing: 8px;
+      padding: 0;
+    }
   
+    .heroDiv p {
+      font-family: 'Kavoon', cursive;
+      padding: 0;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .heroDiv h1 {
+      font-family: 'Kavoon', cursive;
+      font-size: 2em;
+      letter-spacing: 8px;
+      padding: 0;
+    }
+  
+    .heroDiv p {
+      font-family: 'Kavoon', cursive;
+      padding: 0;
+      font-size: 1em;
+    }
+  }
   /* --------------Footer------------------ */
   
   .footer-section {
@@ -416,35 +412,6 @@
   }
   
   /** Added CSS by Gab **/
-  
-  .heroDiv h1 {
-    font-family: 'Kavoon', cursive;
-    letter-spacing: 8px;
-    padding: 0 1em 0;
-  }
-  
-  .littleWizard {
-    color: rgb(92, 77, 151);;
-  }
-  
-  .heroDiv p {
-    font-family: 'Kavoon', cursive;
-    padding: 0 1em 0;
-  }
-  
-  @media all and (min-width: 768px) {
-    .heroDiv h1 {
-      font-family: 'Kavoon', cursive;
-      font-size: 32px;
-      letter-spacing: 8px;
-      padding: 0;
-    }
-  
-    .heroDiv p {
-      font-family: 'Kavoon', cursive;
-      padding: 0;
-    }
-  }
   
   .infoBox {
     width: 1120px;
