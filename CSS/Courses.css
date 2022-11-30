@@ -1,59 +1,44 @@
-/* BODY */
 
-/* TEXT PORTION */
-.elem-text {
-    background: #ff791d;
-    padding: 32px 32px;
-    color: white;
-    max-width: 400px;
+.courseContainer {
+	flex-direction: column;
+	text-align: center;
+	padding: 0 2em 2em;
+	margin: 4em;
+	border-radius: 1em;
+	background-color: #ded7ff;
 }
 
-.high-text {
-    background: #a172f1;
-    padding: 32px 32px;
-    color: white;
-    max-width: 400px;
+.courseTitle {
+	display: inline;
+	justify-content: center;
+	padding: 1em 2em;
+	background-color: #a993ff;
+	border-radius:  1em 1em 1em 1em;
 }
 
-.elem-list, .high-list {
-    font-weight: bold;
+@media all and (max-width: 576px) {
+	.courseContainer {
+		margin: 4em 0.3em;
+
+	}
+
+	.courseTitle {
+		display: inline;
+		justify-content: center;
+		padding: 1em 1em;
+		background-color: #a993ff;
+		border-radius:  1em 1em 1em 1em;
+		font-size: 4vw;
+	}
 }
 
-.elem-list2, .high-list2 {
-    font-weight: normal;
-    font-style: italic;
+.lessons {
+	background-color: #a993ff;
+	margin: 1em;
+	width: 250px;
+	height: 250px;
+	border-radius: 2em;
 }
-
-/* IMAGE PORTION */
-.elem-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.high-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-@media all and (max-width: 768px) {
-    .elem-text {
-        background: #ff791d;
-        padding: 32px 32px;
-        color: white;
-        max-width: 100%;
-    }
-    
-    .high-text {
-        background: #1a3947;
-        padding: 32px 32px;
-        color: white;
-        max-width: 100%;
-    }
-}
-
-/** CSS FOR BUTTONS **/
 
 /* BUTTON1 */
 .button1 {
