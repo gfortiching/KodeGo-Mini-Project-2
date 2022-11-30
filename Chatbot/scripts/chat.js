@@ -1,9 +1,9 @@
 
 // Collapsible
-var coll = document.getElementsByClassName("collapsible");
+var collapse = document.getElementsByClassName("collapsible");
 
-for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
+for (let i = 0; i < collapse.length; i++) {
+    collapse[i].addEventListener("click", function () {
         this.classList.toggle("active");
 
         var content = this.nextElementSibling;
@@ -17,43 +17,27 @@ for (let i = 0; i < coll.length; i++) {
     });
 }
 
-function getTime() {
-    let today = new Date();
-    hours = today.getHours();
-    minutes = today.getMinutes();
-
-    if (hours < 10) {
-        hours = "0" + hours;
-    }
-
-    if (minutes < 10) {
-        minutes = "0" + minutes;
-    }
-
-    let time = hours + ":" + minutes;
-    return time;
-}
-
 // Gets the first message
 function firstBotMessage() { 
-        let firstMessage = "Hello! I am the Wizard Quiz Master. It's nice to meet you, Little Wizard!";
+        let firstMessage = "Hello. It's nice to meet you, Little Wizard! How can I help you?";
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
-    // setTimeout(() => {
-    //     firstBotMessage();
-    //     let secondMessage = "Hello! I am the Wizard Quiz Master. It's nice to meet you, Little Wizard!";
-    //     document.getElementById("botStarterMessage2").innerHTML = '<p class="botText"><span>' + secondMessage + '</span></p>';
-    // }, 2000)
+    setTimeout(() => {
+        firstBotMessage();
+    let secondMessage = "Try saying <b>\"Help\"</b>";
+    document.getElementById("botStarterMessage2").innerHTML = '<p class="botText"><span>' + secondMessage + '</span></p>';
+}, 2000)
+
+    setTimeout(() => {
+        firstBotMessage();
+    let thirdMessage = "Type <b>\"List\"</b> for a list of keywords.";
+    document.getElementById("botStarterMessage3").innerHTML = '<p class="botText"><span>' + thirdMessage + '</span></p>';
+    }, 3000)
 }
 
 firstBotMessage();
 
-    let time = getTime();
-
-    $("#chat-timestamp").append(time);
-    document.getElementById("userInput").scrollIntoView(false);
-
-// Retrieves the response
+// Retrieve response
 function getHardResponse(userText) {
     let botResponse = getBotResponse(userText);
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
@@ -62,7 +46,9 @@ function getHardResponse(userText) {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
-//Gets the text text from the input box and processes it
+
+
+// Getting text from input
 function getResponse() {
     let userText = $("#textInput").val();
 
@@ -81,7 +67,9 @@ function getResponse() {
     }, 1000)
 }
 
-// Handles sending text via button clicks
+
+
+// Send text by clicking button
 function buttonSendText(sampleText) {
     let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
 
@@ -98,11 +86,8 @@ function sendButton() {
     getResponse();
 }
 
-function heartButton() {
-    buttonSendText("Heart clicked!")
-}
-
 // Press enter to send a message
+// Enter Key = 13
 $("#textInput").keypress(function (e) {
     if (e.which == 13) {
         getResponse();

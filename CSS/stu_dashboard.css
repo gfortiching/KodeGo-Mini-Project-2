@@ -356,10 +356,6 @@
   filter: drop-shadow(0 1rem 0.75rem rgba(0, 0, 0, 0.13));
 }
 
-.education {
-  
-}
-
 #main-parts .dash-body .education {
   background: var(--white);
   border-radius: 15px;

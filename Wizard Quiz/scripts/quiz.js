@@ -35,12 +35,6 @@ function firstBotMessage() {
 
 firstBotMessage();
 
-// Time Stamp
-    let time = getTime();
-
-    $("#chat-timestamp").append(time);
-    document.getElementById("userInput").scrollIntoView(false);
-
 // Retrieves the response
 function getHardResponse(userText) {
     let botResponse = getBotResponse(userText);
@@ -86,9 +80,9 @@ function sendButton() {
     getResponse();
 }
 
-// // Press enter to send a message
-// $("#textInput").keypress(function (e) {
-//     if (e.which == 13) {
-//         getResponse();
-//     }
-// });
+// Press enter to send a message
+$("#textInput").keypress(function (e) {
+    if (e.which == 13) {
+        getResponse();
+    }
+});

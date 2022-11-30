@@ -1,19 +1,17 @@
 function getBotResponse(input) {
     //rock paper scissors
-    if (input == "rock") {
-        return "paper";
-    } else if (input == "paper") {
-        return "scissors";
-    } else if (input == "scissors") {
-        return "rock";
+    if (input == "Help") {
+        return "What is your problem? If you have issues on your account you can email us at <b>littlewizards@gmail.com<b>.";
+    } else if (input == "List") {
+        return "Here are a list of keywords.";
+    } else if (input == "Email") {
+        return "Email us at <b>littlewizards@gmail.com<b>.";
     }
 
     // Simple responses
-    if (input == "Hello") {
+    if (input == "Hello.") {
         return "Hello, Little Wizard!";
-    } else if (input == "Not yet.") {
-        return "Alright! Come back later if you're ready. Good luck!";
     } else {
-        return "Try asking something else!";
+        return "I didn't get that. Try asking something else.";
     }
 }
