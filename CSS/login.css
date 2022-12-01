@@ -1,0 +1,239 @@
+*{
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.backButton {
+    margin-top: 5.5em;
+  }
+
+body{
+    background-color: #ffffff;
+    height: 100vh;
+  }
+
+.sect {
+    padding: 20px;
+
+}
+
+.back{
+    padding: 20px;
+}
+
+.h{
+    margin-bottom: 50px;
+}
+
+.h1{
+    margin-top: 30px;
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.h11{
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.h111{
+    margin-top: 5px;
+    padding-top: 30px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-title h2 {
+    margin: 0 0 1em;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+.para{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.row a{
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.info-box {
+    color: #444444;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #ded7ff;
+    border-radius: 10px;
+    width: 250px;
+    height: 100%;
+}
+
+#info-box{
+    border: 3px solid #D9D9D9;
+}
+
+.info-box:hover{
+    border: 3px solid black;
+}
+
+.info-box h3 {
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+}
+
+.info-box p {
+    margin-top: 20px;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.studentImg{
+    width: 100%; 
+    background-color: #D9D9D9;
+}
+/* ==================== Sign-up */
+.info-box1 {
+    color: #444444;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 10px 20px;
+    background-color: #ded7ff;
+    border-radius: 10px;
+}
+
+.details{
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.title {
+    padding-bottom: 10px;
+    color: #46506d;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+label{
+    color: #424c6a;
+    font-weight: inherit;
+    font-size: 13px
+}
+
+input[type=text], input[type=password],input[type=email] {
+    padding: 12px 8px; 
+    margin-bottom: 8px;
+    /* display: inline-block; */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 310px;
+    height: 30px;
+    border-radius: 4px;
+}
+  
+.loginButton {
+    margin: 20px auto 0;
+    cursor: pointer;
+    background-color: #F48539;
+    font-family: 'Kavoon', cursive;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    width: 310px;
+    height: 36px;
+    border-radius: 4px;
+    box-shadow: inset 0 -3px 0 0 rgb(0 0 0 / 12%);
+    text-transform: uppercase;
+}
+
+.loginButton:hover {
+      background-color: #F48539;
+      box-shadow: 0 0 5px black;
+}
+
+.btn-code {
+    cursor: pointer;
+    width: 10%;
+    background-color: #fcce36;
+    border-radius: 4px;
+    box-shadow: inset 0 -3px 0 0 rgb(0 0 0 / 12%);
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #424c6a;
+}
+
+#classCode {
+    display: none;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.classCode {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#yes {
+    display: none;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+#no {
+    display: none;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+#Dremember {
+    display: none;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: rgb(255, 255, 255);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.box:hover {
+    box-shadow: 0 0 5px orange;
+}
+
+  .details .a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+  .details p{
+        margin-bottom: 10px;    
+        font-weight: inherit;
+        font-size: 13px;
+        
+}
+
+  img{
+      margin-right: 5px;
+      width: 20px;
+}
+
+.forgot {
+    color: #ca743b;
+}

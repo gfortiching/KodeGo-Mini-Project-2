@@ -23,18 +23,20 @@
 
   .section-title h2 {
     margin: 0 0 1em;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
   }
+
   .para {
     font-size: 20px;
     font-weight: 700;
+    font-family: sans-serif;
   }
-  .para1 {
-    font-size: 16px;
-    font-weight: 700;
-    padding-bottom: 10px;
+
+  .para a:hover {
+    color: blueviolet;
   }
+
   .cards a {
     padding: 0;
     border: 0;
@@ -130,6 +132,8 @@
     
     .signUpButton:hover {
         background-color: #F48539;
+        box-shadow: 0 0 5px black;
+
     }
 
     .box {
@@ -158,3 +162,50 @@
         margin-right: 5px;
         width: 20px;
     }
+
+    /** I have a code **/
+
+    #classCode {
+      display: none;
+    }
+
+    /** Others **/ 
+
+    .btn-code {
+      cursor: pointer;
+      width: 100px;
+      background-color: #fca936;
+      border-radius: 4px;
+      box-shadow: inset 0 -3px 0 0 rgb(0 0 0 / 12%);
+      font-family: sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #424c6a;
+  }
+  
+  #classCode {
+      display: none;
+      text-align: center;
+      margin: 0 auto 1em;
+  }
+  
+  .classCode {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 auto;
+      gap: 5px;
+      max-width: 400px;
+  }
+
+  .classCode input {
+    height: 50px;
+    margin: 0;
+  }
+
+  .modalBackground {
+    background-color: #e2d5f5;
+    box-shadow: 0 0 1em black;
+  }

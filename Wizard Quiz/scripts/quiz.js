@@ -24,13 +24,13 @@ function firstBotMessage() {
         firstBotMessage();
         let secondMessage = "I can see that you've finished our first lesson. If you're ready to take the quiz, type <b>\"I\'m ready!\"</b>";
         document.getElementById("botStarterMessage2").innerHTML = '<h4 class="botText"><span>' + secondMessage + '</span></h4>';
-    }, 2000)
+    }, 1000)
 
     setTimeout(() => {
         firstBotMessage();
         let secondMessage = "If you're not yet ready to take the quiz, then type <b>\"Not yet.\"</b>";
         document.getElementById("botStarterMessage3").innerHTML = '<h4 class="botText"><span>' + secondMessage + '</span></h4>';
-    }, 3000)
+    }, 1000)
 }
 
 firstBotMessage();

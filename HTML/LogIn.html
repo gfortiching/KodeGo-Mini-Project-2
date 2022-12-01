@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses</title>
-    <!-- CSS only -->
+    <title>Login</title>
+    <!-- Bootstrap CSS only -->
+    <link rel="stylesheet" href="/Bootstrap 5.2.2/css/bootstrap.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Bootstrap 5.2.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/CSS/Courses.css">
-    <link rel="stylesheet" href="/CSS/index.css"> 
+    <!-- Fontawesome Kit -->
+    <script src="https://kit.fontawesome.com/b59098f6cf.js" crossorigin="anonymous"></script>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/login.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kavoon&family=Patrick+Hand&family=Poppins&display=swap" rel="stylesheet">
+<!--  -->
 </head>
 <body>
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
     <div class="container-fluid">
       <a class="navbar-brand" href="/HTML/index.html"><img src="/Landing Page/images/wizard.png" class="logo"></a>
 
@@ -28,13 +32,6 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-lg-auto mb-2 mb-lg-0">
-
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li> -->
 
           <li class="nav-item dropdown ms-lg-5">
             <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown"
@@ -208,126 +205,88 @@
     </div>
   </div>
 
-<header class="container-fluid border-dark">
-    <h1>COURSES</h1>
-</header>
-
-<section class="courseContainer">
-  <h4 class="Kavoon courseTitle">Basic Math for Elementary</h4>
-  <div class="d-flex justify-content-center flex-wrap m-auto mt-5 text-center">
-    <div class="lessons">Lesson 1</div>
-    <div class="lessons">Lesson 2</div>
-    <div class="lessons">Lesson 3</div>
-    <div class="lessons">Lesson 4</div>
-  </div>
-  <button class="button1 button-elem"><a href="/HTML/Course Page.html" class="text-decoration-none">View Course</a></button>
-</section>
-
-<section class="courseContainer">
-  <h4 class="Kavoon courseTitle">Advanced Math for Elementary</h4>
-    <div class="d-flex justify-content-center flex-wrap m-auto mt-5 text-center">
-      <div class="lessons">Lesson 1</div>
-      <div class="lessons">Lesson 2</div>
-      <div class="lessons">Lesson 3</div>
-      <div class="lessons">Lesson 4</div>
+<!-- Back Button -->
+    <div class="p-2 backButton">
+        <a href="/HTML/SignUp1.html" class="p-2 text-decoration-none text-black d-flex align-items-center">
+            <i class="fa-solid fa-circle-left text-black me-2 fs-5"></i><h5 class="m-0"><b>BACK</b></h5>
+        </a>
     </div>
-    <button class="button1 button-elem"><a href="/HTML/Course Page.html" class="text-decoration-none">View Course</a></button>
-</section>
+    
+    <div class="container">
 
-<!-- Footer Section Start -->
-<footer class="footer-section">
-  <div class="footer-cta">
-    <div class="row container-fluid row-cols-1 row-cols-md-3 m-0">
-      <div class="col p-0">
-        <div class="single-cta">
-          <i class="fa-solid fa-location-dot"></i>
-          <div class="cta-text p-0">
-            <h4>Main Office</h4>
-            <p>28th Floor, KodeGo, Philippines</p>
-          </div>
+        <div class="section-title text-center">
+            <h2 class="Kavoon">STUDENT LOGIN</h2>
         </div>
-      </div>
-      <div class="col p-0 mt-5 mt-md-0">
-        <div class="single-cta">
-          <i class="fas fa-envelope"></i>
-          <div class="cta-text p-0">
-            <h4>Write Us An Email</h4>
-            <p>littlewizards@gmail.com</p>
-          </div>
+        <div class="d-flex justify-content-center flex-wrap">
+                <div class="info-box1 d-flex flex-column flex-md-row">
+                    <div class="details">
+                        <form action="submit">
+                            <div class="title">Enter account details</div>
+                            <div class="container1">
+                              <label for="uname"><b>Email</b></label><br>
+                              <input type="email" name="uname" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+
+                              <label for="psw"><b>Password</b></label><br>
+                              <input type="password" name="psw" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i><br>
+                              <input type="checkbox" width="20px"> <label for="rem"><b>Remember me</b></label><br>
+                              <div class="float-end">
+                                  <a href="forgot.html" class="forgot">Forgot Password?</a>
+                              </div>
+                              <div >
+                                <button class="loginButton" type="submit">LOG IN</button>
+                              </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="details w-100">
+                        <div class="title text-center text-md-start">Or signup with:</div>
+                        <p class="text-center text-md-start">You can login in using other socials</p>
+                        
+                        <div class="d-flex justify-content-center flex-column gap-3 flex-wrap">
+                            <div class="box">
+                                <a class="a" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?access_type=offline&client_id=628845338663-rqdhltsfaea2kir8k40njirin4dagrpc.apps.googleusercontent.com&prompt=select_account&redirect_uri=https%3A%2F%2Fapp.codemonkey.com%2Fusers%2Fauth%2Fgoogle_oauth2%2Fcallback&response_type=code&scope=email%20profile&state=2cb77bfc9a123ffcd50cb6c280a7f5a70f3b222995dfa79f&service=lso&o2v=1&flowName=GeneralOAuthFlow">
+                                    <img src="/Images/Sign Up/google.svg">
+                                    Google
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a class="a" href="https://www.facebook.com/login">
+                                    <img src="/Images/Sign Up/facebook.svg">
+                                    Facebook
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a class="a" href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638050716670856191.ZGQwZWQzNmEtZDcwZi00NDNhLWJhYjAtZjBkNjFkMzRkMTkyYTEzMTIzNzYtMzA5Yi00M2NmLWEzZDctY2IwZGZhZjAxM2Qw&ui_locales=en-US&mkt=en-US&client-request-id=d0e8287f-36fd-41d9-b832-bd9b71f188f0&state=nnYSN2vuJ5AY2MTKQjRNVZRVQXvbVMxwFik84AabBY83uiOvbW0rUURn3kUDHoSexpzziE1zwB7e44xKX-LJZvxCaui69Gy5_S0urJvEwRFYF2hY_esmvQjOTj1vPinauenEv-CchkO9ZS5ujrNFLWn_13q9ZsWCiD7Y1jLs9vQvhluLTp8mw8RkTkpfosXKj73hrxyPYiMnrlBGDbLyT7WC3Cj6X58skryuzqvX7P0xZ8987qpuorTo1FfJQfjWLM1PVLYrsrD1aOy6sGqhSacorNHuTqnB5hhJgblM-es&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.16.0.0&sso_reload=true">
+                                    <img src="/Images/Sign Up/office.svg">
+                                    Office 365
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a class="a" href="https://login.yahoo.com/">
+                                    <img src="/Images/Sign Up/yahoo.svg">
+                                    Yahoo!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
-      </div>
-      <div class="col p-0 mt-5 mt-md-0">
-        <div class="single-cta">
-          <i class="fas fa-phone"></i>
-          <div class="cta-text p-0">
-            <h4>Customer Support</h4>
-            <p>+63987654321</p>
-          </div>
-        </div>
-      </div>
+        <p class="para text-black text-center">Don't have an account? <a href="SignUp Form.html" style="color: #FF791D">Sign Up now!</a></p>
     </div>
-  </div>
-  <hr class="w-50 text-white m-auto">
-  <div class="row container-fluid row-cols-1 row-cols-md-3 m-auto footer-content mt-5">
-      <div class="col text-white text-center d-flex flex-column justify-content-center p-0">
-        <img src="/Landing Page/images/wizard.png" class="logo-footer">
-        <div class="footer-widget">
-          <div class="footer-widget-heading">
-            <h4 class="text-white">Subscribe</h4>
-          </div>
-          <div class="footer-text text-white">
-            <p>Don't miss our exclusive offers!</p>
-          </div>
-          <div class="subscribe-form">
-            <form action="#" class="m-auto">
-              <input type="text" placeholder="Email Address" required>
-              <button><i class="fa-brands fa-telegram"></i></button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="col text-white text-center d-flex justify-content-center p-0 mt-5 mt-md-0">
-        <div>
-          <h4 class="mb-5">Quick Links</h4>
-          <p>Home</p>
-          <p>Careers</p>
-          <p>Privacy Policy</p>
-          <p>Terms of Service</p>
-        </div>
-      </div>
-      <div class="col text-white text-center d-flex justify-content-center p-0 mt-5 mt-md-0">
-        <div>
-          <h4 class="mb-5">Courses</h4>
-          <p>Math Lessons</p>
-          <p>Online Math Tutor</p>
-          <p>Homeschool Math</p>
-          <p>Online Math Courses</p>
-        </div>
-      </div>
-  </div>
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#pass');
 
-<div class="footer-social-icon mt-5">
-  <h4 class="text-white text-center">Our Social Media</h4>
-  <div class="socmedIcons m-auto mt-3">
-    <a href="#"><i class="fa-brands fa-facebook-f facebook-bg"></i></a>
-    <a href="#"><i class="fa-brands fa-discord discord-bg"></i></a>
-    <a href="#"><i class="fa-brands fa-instagram instagram-bg"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter twitter-bg"></i></a>
-  </div>
-</div>
-<div class="container copyright-area mt-3">
-  <div class="text-center text-lg-left">
-    <div class="copyright-text">
-      <p>Copyright &copy; 2022, All Right Reserved <a href="#">Little Wizards</a></p>
-    </div>
-  </div>
-</div>
-</footer>
-
-<!-- Fontawesome Kit -->
-<script src="https://kit.fontawesome.com/b59098f6cf.js" crossorigin="anonymous"></script>
+        togglePassword.addEventListener('click', function (e) {
+            // toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            // toggle the eye slash icon
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
 </body>
 </html>

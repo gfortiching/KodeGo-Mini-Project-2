@@ -531,3 +531,110 @@
       margin-left: 0;
     }
   }
+
+  /** FROM COURSE PAGE **/
+
+  
+.courseContainerLanding {
+	flex-direction: column;
+	text-align: center;
+	padding: 0 2em 2em;
+	margin: 10em 4em 4em;
+	border-radius: 1em;
+	background-color: #ded7ff;
+}
+
+.courseTitle {
+	display: inline;
+	justify-content: center;
+	padding: 1em 2em;
+	background-color: #a993ff;
+	border-radius:  1em 1em 1em 1em;
+}
+
+@media all and (max-width: 576px) {
+	.courseContainer {
+		margin: 4em 0.3em;
+
+	}
+
+	.courseTitle {
+		display: inline;
+		justify-content: center;
+		padding: 1em 1em;
+		background-color: #a993ff;
+		border-radius:  1em 1em 1em 1em;
+		font-size: 4vw;
+	}
+}
+
+.lessons {
+	background-color: #a993ff;
+	margin: 1em;
+	width: 250px;
+	height: 250px;
+	border-radius: 2em;
+}
+
+/* BUTTON1 */
+.button1 {
+	font-size: 20px;
+	padding: 5px 20px;
+    margin: 10px;
+	border: 0;
+	cursor: pointer;
+	color: black;
+	border-radius: 10px;
+	display: inline-block;
+	overflow: hidden;
+	transition: all 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+
+.button1::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.button1.gradient:hover {
+	color: white;
+	box-shadow: 0 5px 35px rgba(0, 0, 0, 0.6);
+	transform: translateY(-5px);
+}
+
+/* BUTTON-ELEM */
+
+.button-elem {
+	background: #fff;
+	transform: perspective(1px) translateZ(0);
+	color: black;
+	transition: 0.4s;
+}
+
+.button-elem a {
+	color: black;
+}
+
+.button-elem a:hover {
+	color: rgb(255, 255, 255);
+}
+
+.button-elem::before {
+	background: rgb(255, 90, 20);
+	clip-path: inset(0 100% 0 0);
+	opacity: 1;
+	transition: 0.4s;
+}
+
+.button-elem:hover::before {
+	clip-path: inset(0 0 0 0);
+}
+
+.button-elem:hover {
+	color: white;
+	box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1)
+}

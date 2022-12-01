@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classroom code?</title>
     <!-- Bootstrap CSS only -->
+    <link rel="stylesheet" href="/Bootstrap 5.2.2/css/bootstrap.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Fontawesome Kit -->
     <script src="https://kit.fontawesome.com/b59098f6cf.js" crossorigin="anonymous"></script>
     <!-- CSS Style -->
     <link rel="stylesheet" href="/CSS/index.css">
-    <link rel="stylesheet" href="/CSS/SignUp.css">
+    <link rel="stylesheet" href="/CSS/signup.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -218,9 +219,9 @@
             <h1 class="h1 text-black mb-5 Kavoon">DO YOU HAVE A CLASSROOM CODE?</h2>
         </div>
 
-        <div class="cards d-flex justify-content-center gap-5 flex-wrap">
+        <div class="cards d-flex flex justify-content-center gap-5 flex-wrap">
 
-            <a href="#" class="card mt-0">
+            <a class="card mt-0" onclick="code()" data-bs-toggle="modal" data-bs-target="#code">
                 <div class="info-box mb-3 pt-4 p-4">
                   <h3 class="Kavoon">Yes</h3>
                   <p class="mb-5 text-black">I have a code!</p>
@@ -228,7 +229,7 @@
                 </div>
             </a>
 
-            <a href="SignUp4.html" class="card mt-0">
+            <a href="SignUp Form.html" class="card mt-0">
                 <div class="info-box mb-3 pt-4 p-4">
                     <h3 class="Kavoon">No</h3>
                     <p class="mb-5 text-black">I dont have a code.</p>
@@ -236,8 +237,40 @@
                 </div>
             </a>
         </div>
-        <P class="para text-black text-center">Are you already a member? <a href="SignUp4.html" style="color: #FF791D">Log in to your account</a></P>
+
+        <div class="modal" id="code" tabindex="-1">
+          <div class="modal-dialog modal-fullscreen-md-down">
+            <div class="modal-content modalBackground">
+              <div class="modal-header text-center m-auto">
+                <h5 class="modal-title Kavoon" id="modalFullscreenSizeLabel">Enter your code here!</h5>
+              </div>
+              <div class="modal-body">
+                <form id="classCode" >
+                  <div class="classCode">
+                    <input type="text" placeholder="Enter School code" required> <button class="btn-code">NEXT</button>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer m-auto">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <P class="para text-black text-center">Are you already a member? <a href="LogIn.html" style="color: #FF791D">Log in to your account</a></P>
     </div>
+    
+<script>
+      let intcd = document.querySelector('#classCode');
+      let anchor = document.querySelector('#info-box')
+      function code(){
+          if(intcd.style.display === 'block') {
+          } else {
+              intcd.style.display = 'block';
+          }
+      }
+  </script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
