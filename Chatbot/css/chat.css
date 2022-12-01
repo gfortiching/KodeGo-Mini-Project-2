@@ -11,7 +11,7 @@
     color: white;
     cursor: pointer;
     width: 100%;
-    padding: 1em;
+    padding: 0.5em;
     font-size: 1.2em;
     border-radius: 1em 1em 0 0;
     border: 0;
@@ -131,7 +131,7 @@
 .botText span {
     line-height: 1.5em;
     display: inline-block;
-    background: #ffe5a9;
+    background: #ffb888;
     padding: 10px;
     border-radius: 8px;
     border-bottom-left-radius: 2px;
