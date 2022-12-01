@@ -33,13 +33,13 @@
               aria-expanded="false">
               Courses
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+            <ul class="dropdown-menu text-center text-lg-start">
+              <li><a class="dropdown-item Kavoon text-white" href="Course Page.html">Basic Math for Elementary</a></li>
+              <li><a class="dropdown-item Kavoon text-white" href="#">Basic Math for High School</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="/HTML/Courses.html">View All Courses</a></li>
+              <li><a class="dropdown-item Kavoon text-white" href="/HTML/Courses.html">View All Courses</a></li>
             </ul>
           </li>
 
@@ -48,9 +48,9 @@
               aria-expanded="false">
               Resources
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item Kavoon text-white" href="#">Worksheets</a></li>
+              <li><a class="dropdown-item Kavoon text-white" href="#">Modules</a></li>
             </ul>
           </li>
 
@@ -74,6 +74,7 @@
       </div>
     </div>
   </nav>
+
   <!-- Register Modal Start -->
   <div class="modal fade" id="Register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -203,15 +204,14 @@
 <header class="container-fluid border-0">
       <h1>ABOUT US</h1>
 </header>
-    <div class="container-fluid bgTeam bgCSS">
       <h1 class="text-center sec-title text-dark">Meet the Team</h1>
 
       <!--TEAM MEMBERS-->
-      <div class="row row-cols-sm-2 row-col-lg-4 mt-4">
-        <div class="col col-team">
-          <div class="mt-5 card bg-dave pb-3 border-0">
-            <img src="/Images/About Us Images/pic2.PNG" class="ourTeamImg" onclick="hoverImg0()" onmouseleave="leaveImg0()">
-            <div class="con-team card-info" onclick="hoverImg0()" onmouseleave="leaveImg0()">
+      <div class="d-flex justify-content-center flex-row flex-wrap mt-4">
+        <div class="col-team">
+          <div class="mt-5 cardBg card pb-3 border-0">
+            <img src="/Images/About Us Images/pic2.PNG" class="ourTeamImg" onmouseover="hoverImg0()" onmouseleave="leaveImg0()">
+            <div class="con-team card-info" onmouseover="hoverImg0()" onmouseleave="leaveImg0()">
               <p class="p-2 text-center">"In order to create an engaging learning experience, the role of instructor is optional, but the role of learner is essential."</p>
               <br>
               <br>
@@ -228,10 +228,10 @@
           </div>
         </div>
       
-        <div class="col col-team">
-          <div class="mt-5 card bg-edsel pb-3 border-0">
-            <img src="/Images/About Us Images/pic2.PNG" class="ourTeamImg" onclick="hoverImg1()" onmouseleave="leaveImg1()">
-            <div class="con-team card-info" onclick="hoverImg1()" onmouseleave="leaveImg1()">
+        <div class="col-team">
+          <div class="mt-5 cardBg card bg-edsel pb-3 border-0">
+            <img src="/Images/About Us Images/pic2.PNG" class="ourTeamImg" onmouseover="hoverImg1()" onmouseleave="leaveImg1()">
+            <div class="con-team card-info" onmouseover="hoverImg1()" onmouseleave="leaveImg1()">
               <p class="p-2 text-center">"When it comes to the design of effective learning experiences, one provocative question is worth a hundred proclamations."</p>
               <br>
               <h6 class="ps-2 edselTxt">CHIEF OPERATING OFFICER</h6>
@@ -247,10 +247,10 @@
           </div>
         </div>
       
-        <div class="col col-team">
-          <div class="mt-5 card bg-gab pb-3 border-0">
-            <img src="/Images/About Us Images/Gab.png" class="ourTeamImg" onclick="hoverImg2()" onmouseleave="leaveImg2()">
-            <div class="con-team card-info" onclick="hoverImg2()" onmouseleave="leaveImg2()">
+        <div class="col-team">
+          <div class="mt-5 cardBg card bg-gab pb-3 border-0">
+            <img src="/Images/About Us Images/Gab.png" class="ourTeamImg" onmouseover="hoverImg2()" onmouseleave="leaveImg2()">
+            <div class="con-team card-info" onmouseover="hoverImg2()" onmouseleave="leaveImg2()">
               <p class="p-2 text-center">"People expect to be bored by E-Learning - Let's show them it doesn't have to be like that!"</p>
               <br>
               <br>
@@ -268,10 +268,10 @@
           </div>
         </div>
 
-        <div class="col col-team">
-            <div class="mt-5 card bg-kris pb-3 border-0">
-              <img src="/Images/About Us Images/Kris.png" class="ourTeamImg" onclick="hoverImg3()" onmouseleave="leaveImg3()">
-              <div class="con-team card-info d-flex flex-column align-content-between" onclick="hoverImg3()" onmouseleave="leaveImg3()">
+        <div class="col-team">
+            <div class="mt-5 cardBg card bg-kris pb-3 border-0">
+              <img src="/Images/About Us Images/Kris.png" class="ourTeamImg" onmouseover="hoverImg3()" onmouseleave="leaveImg3()">
+              <div class="con-team card-info d-flex flex-column align-content-between" onmouseover="hoverImg3()" onmouseleave="leaveImg3()">
                 <p class="p-2 pb-4 text-center">"It is most important to see eLearning design not as information design but as designing an experience."</p>
                 <br>
                 <h6 class="ps-2 krisTxt">IT CONSULTANT</h6>
@@ -288,25 +288,37 @@
         </div>
       </div>
 
-      <div class="text-dark mt-5 ps-5 pe-5">
-        <h1 class="text-center sec-title">Our Core Values</h1>
-        <p class="fs-5">Setting the global standard in online learning.</p>
-        <p class="fs-5">Our mission is to impart knowledge and skills to our students through excellent teaching methodologies that would help transform them into dynamic and effective professionals in the IT industry.</p>
-        <p class="fs-5">Our company firmly believes in bringing back this right to everyone, making education available to all classes of society through free quality education.</p>
-      </div>
+    <section class="sectionLanding">
+      <h1 class="Kavoon text-center mt-5">Our Core Values</h1>
+      <p class="fs-5 Kavoon text-center">Our company firmly believes in bringing back this right to everyone, making education available to all classes of society through free quality education.</p>
+      <article class="valuesContainer">
+        <div class="d-flex justify-content-center flex-wrap m-auto mt-5 text-center">
+          <div class="valuesCard">
+            <h4 class="Kavoon">Quality</h4>
+            <img src="https://cdn-icons-png.flaticon.com/512/3276/3276054.png" class="courseImgLanding">
+            <div>
+          </div>
+          </div>
+          <div class="valuesCard">
+            <h4 class="Kavoon">Teamwork</h4>
+            <img src="https://cdn-icons-png.flaticon.com/512/2589/2589816.png" class="courseImgLanding">
+          </div>
+          <div class="valuesCard">
+            <h4 class="Kavoon">Integrity</h4>
+            <img src="https://cdn-icons-png.flaticon.com/512/3500/3500954.png" class="courseImgLanding">
+          </div>
+          <div class="valuesCard">
+            <h4 class="Kavoon">Passion</h4>
+            <img src="https://cdn-icons-png.flaticon.com/512/3173/3173921.png" class="courseImgLanding">
+          </div>
+        </div>
+      </article>
+    </section>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
-        <div class="col d-flex justify-content-center values"><img src="https://cdn-icons-png.flaticon.com/512/3276/3276054.png" class="valuesImg"></div>
-        <div class="col d-flex justify-content-center values"><img src="https://cdn-icons-png.flaticon.com/512/2589/2589816.png" class="valuesImg"></div>
-        <div class="col d-flex justify-content-center values"><img src="https://cdn-icons-png.flaticon.com/512/3500/3500954.png" class="valuesImg"></div>
-        <div class="col d-flex justify-content-center values"><img src="https://cdn-icons-png.flaticon.com/512/3173/3173921.png" class="valuesImg"></div>
-      </div>
-
-        <h1 class="text-center sec-title">Trusted by Our Partners</h1>
-        <br>
-        <br>
-
-        <div class="container m-auto row pb-5">
+    <section class="sectionLanding">
+      <h1 class="text-center sec-title">Trusted by Our Partners</h1>
+      <article class="valuesContainer">
+        <div class="container m-auto row pt-5 pb-5">
             <div class="col partner-icon">
                 <img src="/Images/About Us Images/kodego.png" class="partnerImg">
             </div>
@@ -332,7 +344,8 @@
               <img src="/Images/About Us Images/google.png" class="partnerImg">
             </div>  
         </div>
-    </div>
+      </article>
+    </section>
 
 <!-- Footer Section Start -->
 <footer class="footer-section">

@@ -12,8 +12,8 @@
 
 // console.log(hover);
 
-let hover = document.querySelectorAll('.ourTeamImg')
-let overlay = document.querySelectorAll('.card-info')
+let hover = document.querySelectorAll('.ourTeamImg');
+let overlay = document.querySelectorAll('.card-info');
 
 function hoverImg0() {;
     hover[0].style.transition = "ease-in 0.5s";

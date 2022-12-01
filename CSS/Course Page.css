@@ -129,3 +129,13 @@ body {
         font-size: 0.8em;
     }
 }
+
+/** From Courses Page  **/
+
+.courseContainer {
+	flex-direction: column;
+	padding: 0 2em 2em;
+	margin: 4em;
+	border-radius: 1em;
+	background-color: #CDC3F9;
+}

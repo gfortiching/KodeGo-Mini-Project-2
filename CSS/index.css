@@ -25,7 +25,7 @@
   header {
     border: 0;
     margin: 0;
-    background: #f8f1ff;
+    background: #e6e1ff;
     color: #F5751D;
   }
 
@@ -426,38 +426,50 @@
   
   .infoBox1 {
     border-radius: 2em;
-    padding-bottom: 2em;
+    padding: 0 0 2em;
   }
   
   .infoBox1:hover {
-    background-color: #e7ffcf;
+    box-shadow: 0 0 1em black;
+    background-color: #3c3165;
+    color: white;
+    cursor: pointer;
   }
   
   .infoBox2 {
     border-radius: 2em;
-    padding-bottom: 2em;
+    padding: 0 0 2em;
   }
   
   .infoBox2:hover {
-    background-color: #ffe1d0;
+    box-shadow: 0 0 1em black;
+    background-color: #3c3165;
+    color: white;
+    cursor: pointer;
   }
   
   .infoBox3 {
     border-radius: 2em;
-    padding-bottom: 2em;
+    padding: 0 0 2em;
   }
   
   .infoBox3:hover {
-    background-color: #dfc9ff;
+    box-shadow: 0 0 1em black;
+    background-color: #3c3165;
+    color: white;
+    cursor: pointer;
   }
   
   .infoBox4 {
     border-radius: 2em;
-    padding-bottom: 2em;
+    padding: 0 0 2em;
   }
   
   .infoBox4:hover {
-    background-color: #cdf3ff;
+    box-shadow: 0 0 1em black;
+    background-color: #3c3165;
+    color: white;
+    cursor: pointer;
   }
   
   .logo {
@@ -538,10 +550,25 @@
     margin: 10em 5em 10em;
   }
 
-  @media all and (max-width: 576px) {
+  @media all and (max-width: 992px) {
     .sectionLanding {
       margin: 4em 0.3em;
   
+    }
+  }
+
+  .courseContainer {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2em 2em;
+    margin: 4em;
+    border-radius: 1em;
+    background-color: #a993ff;
+  }
+
+  @media all and (max-width: 576px) {
+    .courseContainer {
+      margin: 4em 0.3em;
     }
   }
 
@@ -551,7 +578,7 @@
   }
 
   .testimonialCard {
-    background-color: #ded7ff;
+    background-color: #f8f6ff;
     margin: 1em;
     padding: 2em 1.5em 0;
     width: 350px;
@@ -559,6 +586,21 @@
     border-radius: 2em;
   }
 
+  .testimonialCard:hover {
+    box-shadow: 0 0 1em black;
+    background-color: #3c3165;
+    color: white;
+    cursor: pointer;
+  }
+
   .testimonialCard i {
     color: orange;
+  }
+
+  /** Nav Dropdown **/
+
+  .dropdown-menu {
+    max-width: 300px;
+    margin: auto;
+    background-color: #5C4D97;
   }

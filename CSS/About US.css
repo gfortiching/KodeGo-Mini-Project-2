@@ -1,5 +1,6 @@
-.bgTeam {
-    background-color: #ffffff;
+
+body {
+    background-color: #F6F0FF;
 }
 
 .col-team {
@@ -11,9 +12,12 @@
     margin: auto;
 }
 
-.card {
-    height: 350px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.ourTeamImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-color: #7141a9;
+
 }
 
   
@@ -58,7 +62,7 @@
 .partner-icon img {
     width: 100px;
     height: 100px;
-    margin-top: 16px;
+    margin: 1em 0;
     object-fit: cover;
 }
 
@@ -68,7 +72,7 @@
 }
 
 .partnerImg {
-    background-color: rgba(226, 227, 234, 0.784);
+    background-color: #ffffff;
     border-radius: 1em;
 }
 
@@ -84,23 +88,18 @@
 
 /** Hover Effect **/
 
-  .card-info  {
+.card-info  {
     position: absolute;
-    margin-right: 16px;
+    margin: 1em;
     opacity: 0;
     color: rgb(255, 255, 255);
     font-weight: 700;
-  }
+}
 
 /** Card Background Color **/
 
-.ourTeamImg {
-    object-fit: cover;
-    height: auto;
-}
-
-.bg-dave {
-    background-color: #87366f;
+.cardBg {
+    background-color: #7141a9;
     cursor: pointer;
 }
 
@@ -110,23 +109,12 @@
     padding: 8px 16px;
     margin-left: 8px;
 }
-    
-
-.bg-edsel {
-    background-color: #848e3d;
-    cursor: pointer;
-}
 
 .edselTxt {
     color: white;
     border-radius: 16px;
     padding: 8px 16px;
     margin-left: 8px;
-}
-
-.bg-gab {
-    background-color: #d18654;
-    cursor: pointer;
 }
 
 .gabTxt {
@@ -136,26 +124,11 @@
     margin-left: 8px;
 }
 
-.bg-kris {
-    background-color: #c6738a;
-    cursor: pointer;
-}
-
 .krisTxt {
     color: white;
     border-radius: 16px;
     padding: 8px 16px;
     margin-left: 8px;
-}
-
-/** Core Values **/
-
-.valuesImg {
-    width: 125px;
-}
-
-.values {
-    padding: 4em 0;
 }
 
 @media only screen and (max-width: 720px) {
@@ -174,4 +147,31 @@
         width: 60px;
         height: 60px;
     }
+}
+
+/** Layout **/ 
+
+.valuesCard {
+    background-color: #f8f6ff;
+    margin: 1em;
+    width: 250px;
+    height: 250px;
+    border-radius: 2em;
+    padding: 1em 1.5em 1em;
+  }
+
+  .valuesCard:hover {
+    box-shadow: 0 0 1em black;
+    background-color: #3c3165;
+    color: white;
+    cursor: pointer;
+  }
+
+.valuesContainer {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em 2em 2em;
+    margin: 4em;
+    border-radius: 1em;
+	background-color: #ded7ff;
 }
