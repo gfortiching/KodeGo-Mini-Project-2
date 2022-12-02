@@ -12,6 +12,9 @@
   --facebook: #3b5998;
   --twitter: #55acce;
   --instagram: #e93b81;
+  --gab-color: rgb(131, 58, 186);
+  --gab-shadow: 0 0 10px rgb(52, 28, 91);
+  ---color: rgb(92, 77, 151);
 }
 
 * {
@@ -130,7 +133,8 @@
 }
 
 #main-parts .dash-body .details .top {
-  background: linear-gradient(288.26deg, #E42313 -8.52%, #F68B1F 129.05%);
+  /* background: linear-gradient(288.26deg, #E42313 -8.52%, #F68B1F 129.05%); */
+  background: var(---color);
   padding-top: 40px;
   padding-bottom: 20px;
 
@@ -225,7 +229,9 @@
 /* About Start */
 
 #main-parts .dash-body .status {
-  background: linear-gradient(289.02deg, #E42313 30.75%, #F68B1F 130.01%);
+  /* background: linear-gradient(289.02deg, #E42313 30.75%, #F68B1F 130.01%); */
+  background: linear-gradient();
+  background: var(--gab-color);
   border-radius: 15px;
   padding: 30px 50px;
 
