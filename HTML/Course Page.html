@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/Bootstrap 5.2.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/CSS/index.css">
     <link rel="stylesheet" href="/CSS/Course Page.css">
+    <link rel="stylesheet" href="/CSS/Courses.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,7 @@
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/HTML/index.html"><img src="/Landing Page/images/wizard.png" class="logo"></a>
+      <a class="navbar-brand" href="/index.html"><img src="/Images/Landing Page Images/wizard.png" class="logo"></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +30,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-lg-auto mb-2 mb-lg-0">
 
-          <li class="nav-item dropdown ms-lg-5">
+          <li class="nav-item ms-lg-4">
+            <a class="nav-link text-center" href="/index.html" role="button">Home</a>
+          </li>
+
+          <li class="nav-item dropdown ms-lg-5 spanList">
             <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Courses
@@ -39,19 +44,8 @@
               <li><a class="dropdown-item Kavoon text-white" href="#">Basic Math for High School</a></li>
               <li>
                 <hr class="dropdown-divider">
-              </li>
+              </li> 
               <li><a class="dropdown-item Kavoon text-white" href="/HTML/Courses.html">View All Courses</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown spanList">
-            <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Resources
-            </a>
-            <ul class="dropdown-menu text-center">
-              <li><a class="dropdown-item Kavoon text-white" href="#">Worksheets</a></li>
-              <li><a class="dropdown-item Kavoon text-white" href="#">Modules</a></li>
             </ul>
           </li>
 
@@ -263,13 +257,57 @@
       <div class="col d-flex justify-content-center ms-lg-2 m-0 p-0 order-0">
           <div class="d-flex justify-content-center flex-column mt-4 mb-4 mt-lg-0 enroll-div">
             <img src="/Images/Course Page Images/wizard2.png" class="wizard2 m-auto">
-            <button class="enroll-btn m-auto">Start Course</button>
+            <a href="/HTML/classroom.html"><button class="enroll-btn m-auto">Start Course</button></a>
           </div>
       </div>
     </div>
   </section>
 
-
+  <section class="courseContainer">
+    <h4 class="Kavoon courseTitle">Basic Math for Elementary</h4>
+    <div class="d-flex justify-content-center flex-wrap m-auto mt-5 text-center">
+      <div class="lessons">
+        <h4 class="Kavoon">Lesson 1:</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/5584/5584877.png" class="courseImg">
+        <h6 class="Kavoon">Class Introduction</h6>
+      </div>
+      <div class="lessons">
+        <h4 class="Kavoon">Lesson 2:</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/4002/4002516.png" class="courseImg">
+        <h6 class="Kavoon">The Number System</h6>
+      </div>
+      <div class="lessons">
+        <h4 class="Kavoon">Lesson 3:</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/3074/3074054.png" class="courseImg">
+        <h6 class="Kavoon">Addition</h6>
+      </div>
+      <div class="lessons">
+        <h4 class="Kavoon">Lesson 4:</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/9068/9068752.png" class="courseImg">
+        <h6 class="Kavoon">Subtraction</h6>
+      </div>
+      <div class="lessons">
+        <h4 class="Kavoon">Lesson 5:</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/3607/3607831.png" class="courseImg">
+        <h6 class="Kavoon">Multiplication</h6>
+      </div>
+      <div class="lessons">
+        <h4 class="Kavoon">Lesson 6:</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/753/753323.png" class="courseImg">
+        <h6 class="Kavoon">Division</h6>
+      </div>
+      <div class="lessons">
+        <h4 class="Kavoon">Lesson 7:</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/667/667510.png" class="courseImg">
+        <h6 class="Kavoon">Operations with numbers up to 50</h6>
+      </div>
+      <div class="lessons">
+        <h4 class="Kavoon">Lesson 8:</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/2995/2995439.png" class="courseImg">
+        <h6 class="Kavoon">Course Exam</h6>
+      </div>
+    </div>
+  </section>
 
   <!--Share & Add to List-->
   <article class="d-flex flex-column flex-sm-row justify-content-center gap-3">
@@ -413,7 +451,7 @@
     <hr class="w-50 text-white m-auto">
     <div class="row container-fluid row-cols-1 row-cols-md-3 m-auto footer-content mt-5">
         <div class="col text-white text-center d-flex flex-column justify-content-center p-0">
-          <img src="/Landing Page/images/wizard.png" class="logo-footer">
+          <img src="/Images/Landing Page Images/wizard.png" class="logo-footer">
           <div class="footer-widget">
             <div class="footer-widget-heading">
               <h4 class="text-white">Subscribe</h4>

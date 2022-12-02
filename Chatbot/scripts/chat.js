@@ -46,8 +46,6 @@ function getHardResponse(userText) {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
-
-
 // Getting text from input
 function getResponse() {
     let userText = $("#textInput").val();

@@ -1,0 +1,88 @@
+body {
+    background-color: #e5e5f7;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#444df755 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #444df755 8px, #e5e5f7 8px) -4px 0;
+    background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+}
+
+.classroomContainer {
+    margin: 3vh 10vw;
+    padding: 1em 0 1.2em;
+    background-color: #bba5ff;
+    border-radius: 2em;
+}
+
+.add {  
+    display: none;
+    object-fit: cover;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 576px) {
+    .add {  
+        display: none;
+        object-fit: cover;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .classroomContainer {
+        margin: 4vh 2vw;
+        padding: 1em 0 1.2em;
+        background-color: #bba5ff;
+        border-radius: 2em;
+    }
+}
+
+#btn0 {
+    padding: 1em 3em;
+    margin: 0 auto;
+    background-color: orange;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    font-weight: 700;
+}
+
+#btn0:hover {
+    background-color: rgb(93, 60, 139);
+    box-shadow: 0 0 1em black;
+    color: white;
+}
+
+@media all and (max-width: 576px) {
+    #btn0 {
+        padding: 0.8em 2em;
+    }
+}
+
+.test {
+    font-weight: 700;
+}
+
+.btn1 {
+    margin: 0 0.5em;
+    padding: 0 1em;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0 0 1em solid black;
+    background-color: orange;
+}
+
+@media all and (max-width: 576px) {
+    .btn1 {
+        margin: 0 0.2em;
+    }
+}
+
+.col1 {
+    background-color: red;
+}
+
+.col2 {
+    background-color: blue;
+}
